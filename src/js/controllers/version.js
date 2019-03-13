@@ -7,5 +7,5 @@ angular.module('trustnoteApp.controllers').controller('versionController', funct
 	this.commitHash = window.commitHash;
 
 	// wallet type
-	this.type = (conf.bLight ? 'light-' : '') + "pow-beta1";
+	this.type = (conf.bLight ? 'light-' : '') + "pow-beta2";
 });
