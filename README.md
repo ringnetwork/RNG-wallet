@@ -59,14 +59,14 @@ Please refer to [windows-build-tools](https://github.com/felixrieseberg/windows-
 #### Clone project code
 
 ```sh
-git clone https://github.com/trustnote/trustnote-wallet.git
-cd trustnote-wallet
+git clone https://github.com/trustnote/trustnote-pow-wallet.git
+cd trustnote-pow-wallet
 ```
 
 #### Compile
 
 ```sh
-# ./trustnote-wallet
+# ./trustnote-pow-wallet
 
 bower install
 npm install
@@ -81,7 +81,7 @@ cd ../..
 #### Execute
 
 ```sh
-# ./trustnote-wallet
+# ./trustnote-pow-wallet
 npm run start
 ```
 
@@ -91,7 +91,7 @@ The release package will be generated under ../trustnotebuilds
 
 ```
 --|
-  | trustnote-wallet
+  | trustnote-pow-wallet
   | trustnotebuilds
 ```
 

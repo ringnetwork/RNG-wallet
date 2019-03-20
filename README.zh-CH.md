@@ -57,14 +57,14 @@ Github release:
 #### 克隆项目代码
 
 ```sh
-git clone https://github.com/trustnote/trustnote-wallet.git
-cd trustnote-wallet
+git clone https://github.com/trustnote/trustnote-pow-wallet.git
+cd trustnote-pow-wallet
 ```
 
 #### 编译项目
 
 ```sh
-# ./trustnote-wallet
+# ./trustnote-pow-wallet
 
 bower install
 npm install
@@ -79,7 +79,7 @@ cd ../..
 #### 运行程序:
 
 ```sh
-# ./trustnote-wallet
+# ./trustnote-pow-wallet
 npm run start
 ```
 
