@@ -172,7 +172,7 @@ gulp.task("dmg", ["copy_osx"], function(cb) {
 });
 
 gulp.task("prebuild_android", function() {
-    var worker = exec("cordova/build.sh ANDROID", {});
+    var worker = exec("bash cordova/build.sh ANDROID", {});
     worker.stdout.on("data", function(data) {
         console.log(data);
     });
