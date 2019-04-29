@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('botController',
+angular.module('ringnetworkApp.controllers').controller('botController',
     function ($stateParams, $scope, $log, go, correspondentListService, safeApplyService) {
         var self = this;
         
-        var bots = require('trustnote-pow-common/bot/bots.js');
+        var bots = require('rng-core/bot/bots.js');
 
         // get params id from route url
         var id = $stateParams.id;

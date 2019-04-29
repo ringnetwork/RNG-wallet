@@ -2,7 +2,7 @@
 
 // 配置服务脚本
 
-angular.module('trustnoteApp.services').factory('configService', function (storageService, lodash, $log, isCordova) {
+angular.module('ringnetworkApp.services').factory('configService', function (storageService, lodash, $log, isCordova) {
     var root = {};
     root.colorOpts = [
         "#0095ff",
@@ -22,7 +22,7 @@ angular.module('trustnoteApp.services').factory('configService', function (stora
         '#7A8C9E'
     ];
 
-    var constants = require('trustnote-pow-common/config/constants.js');
+    var constants = require('rng-core/config/constants.js');
     var isTestnet = constants.version.match(/t$/);
 
     // 配置时间戳地址
@@ -68,7 +68,7 @@ angular.module('trustnoteApp.services').factory('configService', function (stora
             totalCosigners: 6
         },
         // 钱包hub配置
-        // hub: (constants.alt === '2' && isTestnet) ? 'trustnote.org/bb-test' : 'galilei.trustnote.org/tn',
+        // hub: (constants.alt === '2' && isTestnet) ? 'ringnetwork.org/bb-test' : 'galilei.ringnetwork.org/tn',
         hub: root.hub[(Math.floor(Math.random() * (root.hub.length)))],
 
         // requires bluetooth permission on android

@@ -1,25 +1,25 @@
-## TrustNote
+## RingNetwork
 
-TrustNote是一个社区开源项目，提供可靠可信的区块链公有网络服务，社区版钱包也命名为TrustNote，整个项目都是由TrustNote基金会提供支持。
+RingNetwork是一个社区开源项目，提供可靠可信的区块链公有网络服务，社区版钱包也命名为RingNetwork，整个项目都是由RingNetwork基金会提供支持。
 
-本项目是TrustNote社区版钱包，安全，简单，易用。钱包内功能包括：转账交易、私密即时消息、安全方案、支持TRC20 Token 等等。
+本项目是RingNetwork社区版钱包，安全，简单，易用。钱包内功能包括：转账交易、私密即时消息、安全方案、支持TRC20 Token 等等。
 
-我们希望有兴趣的开发者加入社区，为TrustNote项目贡献代码和国际化语言。TrustNote会在社区共同努力下，逐渐成为世界一流的区块链公有网络。
+我们希望有兴趣的开发者加入社区，为RingNetwork项目贡献代码和国际化语言。RingNetwork会在社区共同努力下，逐渐成为世界一流的区块链公有网络。
 
-详细内容见官方网站 [trustnote.org](https://trustnote.org/)
+详细内容见官方网站 [ringnetwork.org](https://ringnetwork.org/)
 
 ## 软件下载
 
 官方下载: 
-- [trustnote.org](https://trustnote.org/application.html)
+- [ringnetwork.org](https://ringnetwork.org/application.html)
 
 Github release: 
-- [github.com](https://github.com/trustnote/trustnote-wallet/releases)
+- [github.com](https://github.com/ringnetwork/rng-wallet/releases)
 
 
 ## 安装
 
-我们提供了多个平台的可执行程序，你可以点击上面的下载链接开始使用TrustNote钱包，也可以使用项目源代码编译成可执行程序。
+我们提供了多个平台的可执行程序，你可以点击上面的下载链接开始使用RingNetwork钱包，也可以使用项目源代码编译成可执行程序。
 
 #### 安装依赖
 
@@ -57,14 +57,14 @@ Github release:
 #### 克隆项目代码
 
 ```sh
-git clone https://github.com/trustnote/trustnote-pow-wallet.git
-cd trustnote-pow-wallet
+git clone https://github.com/ringnetwork/rng-wallet.git
+cd rng-wallet
 ```
 
 #### 编译项目
 
 ```sh
-# ./trustnote-pow-wallet
+# ./rng-wallet
 
 bower install
 npm install
@@ -79,18 +79,18 @@ cd ../..
 #### 运行程序:
 
 ```sh
-# ./trustnote-pow-wallet
+# ./rng-wallet
 npm run start
 ```
 
 #### 软件打包
 
-在trustnote-wallet目录下操作，完成之后会在上级目录trustnotebuilds中生成安装包。
+在rng-wallet目录下操作，完成之后会在上级目录ringnetworkbuilds中生成安装包。
 
 ```
 --|
-  | trustnote-wallet
-  | trustnotebuilds
+  | rng-wallet
+  | builds
 ```
 
 ##### Android
@@ -119,19 +119,19 @@ npm run start
 - `npm run linux64`
 
 
-## TrustNote备份和恢复
+## RingNetwork备份和恢复
 
-TrustNote使用过程中，会在用户目录生成缓存文件，用来保存账本数据和个人设置，并且在卸载软件后不会主动删除这些缓存文件，防止错误卸载软件而丢失个人数字资产，重新安装软件就可恢复数据。若用户已确定要删除这些废弃的数据，可按照下面的操作系统位置去操作。
+RingNetwork使用过程中，会在用户目录生成缓存文件，用来保存账本数据和个人设置，并且在卸载软件后不会主动删除这些缓存文件，防止错误卸载软件而丢失个人数字资产，重新安装软件就可恢复数据。若用户已确定要删除这些废弃的数据，可按照下面的操作系统位置去操作。
 
-* macOS: `~/Library/Application Support/TTT`
-* Linux: `~/.config/TTT`
-* Windows: `%LOCALAPPDATA%\TTT`
+* macOS: `~/Library/Application Support/RNG`
+* Linux: `~/.config/RNG`
+* Windows: `%LOCALAPPDATA%\RNG`
 
 
 ## 问题反馈
 
-* [GitHub Issues](https://github.com/trustnote/trustnote-wallet/issues)
-* [Email Support](mailto:foundation@trustnote.org)
+* [GitHub Issues](https://github.com/ringnetwork/rng-wallet/issues)
+* [Email Support](mailto:foundation@ringnetwork.org)
 
 ## 许可证
 

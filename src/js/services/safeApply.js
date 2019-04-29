@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services').factory('safeApplyService', function safeApplyServiceFactory() {
+angular.module('ringnetworkApp.services').factory('safeApplyService', function safeApplyServiceFactory() {
     var root = {};
 
     root.safeApply = function (scope, fn) {

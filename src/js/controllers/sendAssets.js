@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('sendAssets', function ($scope, $rootScope, go, profileService, gettextCatalog, addressService, $timeout) {
+angular.module('ringnetworkApp.controllers').controller('sendAssets', function ($scope, $rootScope, go, profileService, gettextCatalog, addressService, $timeout) {
     var self = this;
     var indexScope = $scope.index;
     var https = require('https');
@@ -22,7 +22,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
             method: 'GET',
             timeout: 6000,
             headers: {
-                'referer': 'trustnote.org'
+                'referer': 'ringnetwork.org'
             }
         };
         var req = https.request(options, function (res) {
@@ -226,7 +226,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
                         "amount": opts.amount,
                         "v": Math.floor(Math.random() * 9000 + 1000)
                     };
-                    self.text_to_sign_qr = 'TTT:' + JSON.stringify(obj);
+                    self.text_to_sign_qr = 'RNG:' + JSON.stringify(obj);
                     $timeout(function () {
                         profileService.tempNum2 = obj.v;
                         $scope.$apply();
@@ -300,7 +300,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
                             timeout: 6000,
                             headers: {
                                 'Content-Type': 'application/json',
-                                'referer': 'trustnote.org'
+                                'referer': 'ringnetwork.org'
                             }
                         };
                         var req = https.request(options, function (res) {

@@ -11,19 +11,19 @@ var modules = [
     'ngLodash',
     'uiSwitch',
     'bwcModule',
-    'trustnoteApp.filters',
-    'trustnoteApp.services',
-    'trustnoteApp.controllers',
-    'trustnoteApp.directives',
-    'trustnoteApp.addons',
+    'ringnetworkApp.filters',
+    'ringnetworkApp.services',
+    'ringnetworkApp.controllers',
+    'ringnetworkApp.directives',
+    'ringnetworkApp.addons',
     'ct.ui.router.extras'
 ];
 
-var trustnoteApp = window.trustnoteApp = angular.module('trustnoteApp', modules);
+var ringnetworkApp = window.ringnetworkApp = angular.module('ringnetworkApp', modules);
 
-angular.module('trustnoteApp.filters', []);
-angular.module('trustnoteApp.services', []);
-angular.module('trustnoteApp.controllers', []);
-angular.module('trustnoteApp.directives', []);
-angular.module('trustnoteApp.addons', []);
+angular.module('ringnetworkApp.filters', []);
+angular.module('ringnetworkApp.services', []);
+angular.module('ringnetworkApp.controllers', []);
+angular.module('ringnetworkApp.directives', []);
+angular.module('ringnetworkApp.addons', []);
 

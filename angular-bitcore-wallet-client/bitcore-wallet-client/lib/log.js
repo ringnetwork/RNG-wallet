@@ -120,7 +120,7 @@ Logger.prototype.setLevel = function (level) {
  * @param {*} args - the arguments to be logged.
  */
 
-var logger = new Logger('trustnote');
+var logger = new Logger('ringnetwork');
 var error = new Error();
 logger.setLevel('info');
 module.exports = logger;

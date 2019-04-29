@@ -2,9 +2,9 @@
 
 angular.element(document).ready(function () {
 
-    // Run trustnoteApp after device is ready.
+    // Run ringnetworkApp after device is ready.
     var startAngular = function () {
-        angular.bootstrap(document, ['trustnoteApp']);
+        angular.bootstrap(document, ['ringnetworkApp']);
     };
 
     // Cordova specific Init

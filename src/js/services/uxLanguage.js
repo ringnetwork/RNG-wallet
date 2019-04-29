@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services').factory('uxLanguage', function languageService($log, lodash, gettextCatalog, amMoment, configService) {
+angular.module('ringnetworkApp.services').factory('uxLanguage', function languageService($log, lodash, gettextCatalog, amMoment, configService) {
     var root = {};
 
     root.availableLanguages = [{

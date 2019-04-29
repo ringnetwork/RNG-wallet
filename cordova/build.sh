@@ -14,10 +14,10 @@ checkOK() {
 
 # Configs
 BUILDDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PROJECT="$BUILDDIR/../../trustnotebuilds/project-$1"
+PROJECT="$BUILDDIR/../../builds/project-$1"
 
-if [ ! -d "$BUILDDIR/../../trustnotebuilds" ]; then
-    mkdir -p $BUILDDIR/../../trustnotebuilds
+if [ ! -d "$BUILDDIR/../../builds" ]; then
+    mkdir -p $BUILDDIR/../../builds
 fi
 
 CURRENT_OS=$1
@@ -60,7 +60,7 @@ echo "Project directory is $PROJECT"
 if [ ! -d $PROJECT ]; then
     cd $BUILDDIR
     echo "${OpenColor}${Green}* Creating project... ${CloseColor}"
-    cordova create ../../trustnotebuilds/project-$1 org.trustnote.smartwallet TrustNote
+    cordova create ../../builds/project-$1 org.ringnetwork.smartwallet RingNetwork
     checkOK
     
     cd $PROJECT
@@ -83,7 +83,7 @@ if [ ! -d $PROJECT ]; then
     #  checkOK
     
     if [ $CURRENT_OS == "IOS" ]; then
-        cordova plugin add https://github.com/trustnote/phonegap-plugin-barcodescanner.git
+        cordova plugin add https://github.com/ringnetwork/phonegap-plugin-barcodescanner.git
         checkOK
         
         cordova plugin add cordova-plugin-exitapp-ios
@@ -100,7 +100,7 @@ if [ ! -d $PROJECT ]; then
     cordova plugin add cordova-plugin-statusbar
     checkOK
     
-    cordova plugin add cordova-plugin-customurlscheme --variable URL_SCHEME=ttt
+    cordova plugin add cordova-plugin-customurlscheme --variable URL_SCHEME=rng
     checkOK
     
     cordova plugin add cordova-plugin-inappbrowser
@@ -109,7 +109,7 @@ if [ ! -d $PROJECT ]; then
     cordova plugin add cordova-plugin-x-toast && cordova prepare
     checkOK
     
-    cordova plugin add https://github.com/trustnote/CordovaClipboard.git
+    cordova plugin add https://github.com/ringnetwork/CordovaClipboard.git
     checkOK
     
     cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git && cordova prepare
@@ -142,7 +142,7 @@ if [ ! -d $PROJECT ]; then
     cordova plugin add cordova-ios-requires-fullscreen
     checkOK
     
-    cordova plugin add https://github.com/trustnote/cordova-sqlite-plugin.git
+    cordova plugin add https://github.com/ringnetwork/cordova-sqlite-plugin.git
     checkOK
     
     cordova plugin add cordova-plugin-device-name
@@ -152,12 +152,12 @@ fi
 
 if $DBGJS
 then
-    echo "${OpenColor}${Green}* Generating trustnote bundle (debug js)...${CloseColor}"
+    echo "${OpenColor}${Green}* Generating ringnetwork bundle (debug js)...${CloseColor}"
     cd $BUILDDIR/..
     npx gulp cordova
     checkOK
 else
-    echo "${OpenColor}${Green}* Generating trustnote bundle...${CloseColor}"
+    echo "${OpenColor}${Green}* Generating ringnetwork bundle...${CloseColor}"
     cd $BUILDDIR/..
     npx gulp cordova-prod
     checkOK
@@ -170,8 +170,8 @@ cp -af public/** $PROJECT/www
 checkOK
 
 echo "${OpenColor}${Green}* Copying initial database...${CloseColor}"
-cp node_modules/trustnote-pow-common/db/initial.trustnote.sqlite $PROJECT/www
-cp node_modules/trustnote-pow-common/db/initial.trustnote-light.sqlite $PROJECT/www
+cp node_modules/rng-core/db/initial.ringnetwork.sqlite $PROJECT/www
+cp node_modules/rng-core/db/initial.ringnetwork-light.sqlite $PROJECT/www
 checkOK
 
 node $BUILDDIR/replaceForPartialClient.js $PROJECT
@@ -186,7 +186,7 @@ checkOK
 if [ $CURRENT_OS == "ANDROID" ]; then
     echo "Android project!!!"
     
-    cat $BUILDDIR/android/android.css >> $PROJECT/www/css/trustnote.css
+    cat $BUILDDIR/android/android.css >> $PROJECT/www/css/ringnetwork.css
     
     mkdir -p $PROJECT/platforms/android/app/src/main/res/xml/
     checkOK
@@ -206,10 +206,10 @@ if [ $CURRENT_OS == "ANDROID" ]; then
     cd $PROJECT && cordova build android 2>&1 >/dev/null
     checkOK
     
-    mv $PROJECT/platforms/android/app/build/outputs/apk/debug/app-debug.apk $BUILDDIR/../../trustnotebuilds/trustnote.apk
+    mv $PROJECT/platforms/android/app/build/outputs/apk/debug/app-debug.apk $BUILDDIR/../../builds/ringnetwork.apk
     checkOK
 
-    echo "Done, output in ../trustnotebuilds"
+    echo "Done, output in ../builds"
 fi
 
 if [ $CURRENT_OS == "IOS" ]; then
@@ -222,9 +222,9 @@ if [ $CURRENT_OS == "IOS" ]; then
     cd $PROJECT && cordova build ios 2>&1 >/dev/null
     checkOK
 
-    echo "Done, open ${PROJECT}/platforms/ios/TrustNote.xcodeproj"    
+    echo "Done, open ${PROJECT}/platforms/ios/RingNetwork.xcodeproj"    
 
-    open $PROJECT/platforms/ios/TrustNote.xcodeproj
+    open $PROJECT/platforms/ios/RingNetwork.xcodeproj
     checkOK
     #  mkdir -p $PROJECT/platforms/ios
     #  checkOK

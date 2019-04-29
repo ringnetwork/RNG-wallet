@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('createController', function ($scope, $rootScope, $location, $timeout, $log, lodash, go, profileService, configService, isCordova, gettext, isMobile, derivationPathHelper, correspondentListService, safeApplyService) {
+angular.module('ringnetworkApp.controllers').controller('createController', function ($scope, $rootScope, $location, $timeout, $log, lodash, go, profileService, configService, isCordova, gettext, isMobile, derivationPathHelper, correspondentListService, safeApplyService) {
 
 	var self = this;
 
@@ -220,7 +220,7 @@ angular.module('trustnoteApp.controllers').controller('createController', functi
 	this.BeforeScan = function() {};
 
 	this.handleQrcode = function parseUri(str, callbacks) {
-		var re = new RegExp('^TTT:(.+)$', 'i');
+		var re = new RegExp('^RNG:(.+)$', 'i');
 		var arrMatches = str.match(re);
 		if (!arrMatches){
 			self.isErr = 1; // 报错 显示无效认证码
@@ -239,7 +239,7 @@ angular.module('trustnoteApp.controllers').controller('createController', functi
 		if (obj_from_coldWallet.type) {
 			switch (obj_from_coldWallet.type) {
 				case "c1" :
-					self.qrCodeColdwallet1 = "TTT:" + JSON.stringify(obj_from_coldWallet);
+					self.qrCodeColdwallet1 = "RNG:" + JSON.stringify(obj_from_coldWallet);
 					self.isErr = 0;
 					self.isExists = 0;
 					$scope.index.askColdwalletQrcode = false;
@@ -250,7 +250,7 @@ angular.module('trustnoteApp.controllers').controller('createController', functi
 						var opts = {
 							m: 1,
 							n: 1,
-							name: "TTT(*)",
+							name: "RNG(*)",
 							xPubKey: self.tempPubKey,
 							account: self.tempAccount,
 							network: 'livenet',
@@ -304,10 +304,10 @@ angular.module('trustnoteApp.controllers').controller('createController', functi
 			return;
 		}
 
-		var re = new RegExp('^TTT:(.+)$', 'i');
+		var re = new RegExp('^RNG:(.+)$', 'i');
 		var arrMatches = self.qrCodeColdwallet1.match(re);
 		if (!arrMatches){
-			self.isErr = 1; // 没有TTT开头 返回
+			self.isErr = 1; // 没有RNG开头 返回
 			return;
 		}
 
@@ -343,7 +343,7 @@ angular.module('trustnoteApp.controllers').controller('createController', functi
 				return;
 			}
 		}
-		self.qrCodeColdwallet2 = "TTT:" + JSON.stringify(self.obj_to_sign);  // 需要展示的信息（ 二维码 ）
+		self.qrCodeColdwallet2 = "RNG:" + JSON.stringify(self.obj_to_sign);  // 需要展示的信息（ 二维码 ）
 
 		$scope.index.askColdwalletQrcode = true;
 		self.finishHot = 1;

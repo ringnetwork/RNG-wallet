@@ -1,8 +1,8 @@
 'use strict';
 
-var constants = require('trustnote-pow-common/config/constants.js');
+var constants = require('rng-core/config/constants.js');
 
-angular.module('trustnoteApp.services').factory('txFormatService', function (profileService, configService, lodash) {
+angular.module('ringnetworkApp.services').factory('txFormatService', function (profileService, configService, lodash) {
 	var root = {};
 
 	var formatAmountStr = function (amount, asset) {

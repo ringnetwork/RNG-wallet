@@ -28,7 +28,7 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR TRUSTNOTE WALLET, YOU ACKNOWLEDGE AND AGREE
 msgstr ""
 
 #: preferencesGlobal.html:96
-msgid "About TrustNote"
+msgid "About RingNetwork"
 msgstr ""
 
 #: confirmDialog.js:8
@@ -228,7 +228,7 @@ msgid "Changing wallet alias only affects the local wallet name."
 msgstr ""
 
 #: modals\howToSign.html:314
-msgid "Choose one watch wallet that is the same with cold wallet - go to TTT transaction page,input all the transfer information - click “Confirm” button - generate QR code"
+msgid "Choose one watch wallet that is the same with cold wallet - go to RNG transaction page,input all the transfer information - click “Confirm” button - generate QR code"
 msgstr ""
 
 #: modals\correspondentListToReSendPrivPayloads.html:10
@@ -512,7 +512,7 @@ msgid "Download CSV file"
 msgstr ""
 
 #: splash.html:81
-msgid "Download the entire TrustNote database"
+msgid "Download the entire RingNetwork database"
 msgstr ""
 
 #: includes\backupWaring.html:462
@@ -528,7 +528,7 @@ msgstr ""
 #: airDrop.js:618
 #: airDrop.js:643
 #: preferencesRecords.html:127
-msgid "Enter T code to redeem your asset at 'TrustNote Wallet/Wallet/Wallet-setting/Redeem T Code'"
+msgid "Enter T code to redeem your asset at 'RingNetwork Wallet/Wallet/Wallet-setting/Redeem T Code'"
 msgstr ""
 
 #: airDrop.js:36
@@ -688,7 +688,7 @@ msgid "Insert my address"
 msgstr ""
 
 #: modals\howToSign.html:143
-msgid "Installed the newest version 1.1.5 and download from trustnote.org"
+msgid "Installed the newest version 1.1.5 and download from ringnetwork.org"
 msgstr ""
 
 #: walletHome.html:376
@@ -758,7 +758,7 @@ msgid "Later"
 msgstr ""
 
 #: modals\howToSign.html:306
-msgid "Let’s use offline signature function to transfer TTT:"
+msgid "Let’s use offline signature function to transfer RNG:"
 msgstr ""
 
 #: disclaimer.js:16
@@ -833,7 +833,7 @@ msgid "Moved"
 msgstr ""
 
 #: includes\qrcode.html:17
-msgid "My TrustNote address"
+msgid "My RingNetwork address"
 msgstr ""
 
 #: modals\destination-address.html:185
@@ -1435,7 +1435,7 @@ msgid "T Code is not stable, please try again later"
 msgstr ""
 
 #: profileService.js:268
-msgid "TTT Wallet"
+msgid "RNG Wallet"
 msgstr ""
 
 #: walletHome.html:226
@@ -1462,7 +1462,7 @@ msgid "The TrustMe URI suggests replacing the following witnesses:"
 msgstr ""
 
 #: disclaimer.html:65
-msgid "The authors of the software cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the TrustNote network."
+msgid "The authors of the software cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the RingNetwork network."
 msgstr ""
 
 #: modals\bind.html:23
@@ -1571,7 +1571,7 @@ msgid "TrustME URI"
 msgstr ""
 
 #: modals\destination-address.html:169
-msgid "TrustNote address"
+msgid "RingNetwork address"
 msgstr ""
 
 #: modals\howToSign.html:142
@@ -1662,7 +1662,7 @@ msgid "Wallet Name (at creation)"
 msgstr ""
 
 #: profileService.js:488
-msgid "Wallet already in trustnote:"
+msgid "Wallet already in ringnetwork:"
 msgstr ""
 
 #: create.html:97
@@ -1708,7 +1708,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr ""
 
 #: splash.html:109
-msgid "Welcome To TrustNote"
+msgid "Welcome To RingNetwork"
 msgstr ""
 
 #: recoveryFromSeed.js:276

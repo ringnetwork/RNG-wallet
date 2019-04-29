@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services').factory('derivationPathHelper', function(lodash) {
+angular.module('ringnetworkApp.services').factory('derivationPathHelper', function(lodash) {
   var root = {};
 
   root.default = "m/44'/0'/0'"

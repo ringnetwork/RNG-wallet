@@ -33,7 +33,7 @@
         padding: 0 25px;
         margin-top: 10px;
     }
-    div.stepType button, div.wellcomTTT button {
+    div.stepType button, div.wellcomRNG button {
         font-size: 14px;
         background: #0095ff;
         padding: 10px;
@@ -43,7 +43,7 @@
         border-radius: 5px;
         margin-top: 40px;
     }
-    div.wellcomTTT button {
+    div.wellcomRNG button {
         margin-top: 60px;
     }
     h1.icon-splashwallet {
@@ -72,14 +72,14 @@
 	<div ng-if="!index.hasProfile">
         <!--第一步：选择钱包类型-->
 		<div class="stepType" ng-if="splash.step === 'wallet_type'">
-            <h4 class="topTitle">TrustNote</h4>
+            <h4 class="topTitle">RingNetwork</h4>
             <p class="pTails" translate>Please choose how much data to store in your wallet</p>
             <p class="pTails" translate>This choice cannot be changed later</p>
             <!-- 完整钱包 -->
             <div class="walletType">
                 <input type="radio" name="wallet_type" value="full" ng-model="splash.wallet_type" id="wallet_type_full">
                 <label for="wallet_type_full" translate>
-                    Download the entire TrustNote database
+                    Download the entire RingNetwork database
                 </label>
             </div>
             <p class="walletDetails" translate>
@@ -102,11 +102,11 @@
 		</div>
 
 
-        <!-- 第二步： 欢迎来到trustnote -->
-		<div class="wellcomTTT" ng-if="splash.step === 'device_name'">
-            <h4 class="topTitle">TrustNote</h4>
+        <!-- 第二步： 欢迎来到ringnetwork -->
+		<div class="wellcomRNG" ng-if="splash.step === 'device_name'">
+            <h4 class="topTitle">RingNetwork</h4>
 			<h1 class="icon-splashwallet color333"></h1>
-			<h1 class="text-bold size-18 color333 text-center" translate>Welcome To TrustNote</h1>
+			<h1 class="text-bold size-18 color333 text-center" translate>Welcome To RingNetwork</h1>
             <p class="size-14 m0 m20b color666 text-center pText" translate>
                 Your wallet will be created on this device, keep it safe.  See your backup options in the Settings menu. Also in the Settings menu, you will find security options such as setting a password.
             </p>

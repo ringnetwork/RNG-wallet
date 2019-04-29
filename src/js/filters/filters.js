@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.filters', [])
+angular.module('ringnetworkApp.filters', [])
   .filter('amTimeAgo', ['amMoment',
     function(amMoment) {
       return function(input) {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('passwordController',
+angular.module('ringnetworkApp.controllers').controller('passwordController',
     function ($rootScope, $timeout, profileService, gettext) {
 
         var self = this;

@@ -1,23 +1,23 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('recoveryFromSeed', function ($rootScope, $scope, $log, gettext, $timeout, gettextCatalog, profileService, go, notification, storageService, isCordova) {
+angular.module('ringnetworkApp.controllers').controller('recoveryFromSeed', function ($rootScope, $scope, $log, gettext, $timeout, gettextCatalog, profileService, go, notification, storageService, isCordova) {
 	var async = require('async');
-	var conf = require('trustnote-pow-common/config/conf.js');
-	var wallet_defined_by_keys = require('trustnote-pow-common/wallet/wallet_defined_by_keys.js');
-	var objectHash = require('trustnote-pow-common/base/object_hash.js');
+	var conf = require('rng-core/config/conf.js');
+	var wallet_defined_by_keys = require('rng-core/wallet/wallet_defined_by_keys.js');
+	var objectHash = require('rng-core/base/object_hash.js');
 
 	try {
 		var ecdsa = require('secp256k1');
 	}
 	catch (e) {
-		var ecdsa = require('trustnote-pow-common/node_modules/secp256k1' + '');
+		var ecdsa = require('rng-core/node_modules/secp256k1' + '');
 	}
 
 	var Mnemonic = require('bitcore-mnemonic');
 	var Bitcore = require('bitcore-lib');
-	var db = require('trustnote-pow-common/db/db.js');
-	var network = require('trustnote-pow-common/p2p/network');
-	var myWitnesses = require('trustnote-pow-common/witness/my_witnesses');
+	var db = require('rng-core/db/db.js');
+	var network = require('rng-core/p2p/network');
+	var myWitnesses = require('rng-core/witness/my_witnesses');
 	var fc = profileService.focusedClient;
 
 
@@ -271,7 +271,7 @@ angular.module('trustnoteApp.controllers').controller('recoveryFromSeed', functi
 					witnesses: arrWitnesses
 				}, function (ws, request, response) {
 					if (response && response.error) {
-						var breadcrumbs = require('trustnote-pow-common/base/breadcrumbs.js');
+						var breadcrumbs = require('rng-core/base/breadcrumbs.js');
 						breadcrumbs.add('Error scanForAddressesAndWalletsInLightClient: ' + response.error);
 						self.error = gettextCatalog.getString('When scanning an error occurred, please try again later.');
 						self.scanning = false;
@@ -327,7 +327,7 @@ angular.module('trustnoteApp.controllers').controller('recoveryFromSeed', functi
 	}
 
 	function cleanAndAddWalletsAndAddresses(assocMaxAddressIndexes) {
-		var device = require('trustnote-pow-common/wallet/device.js');
+		var device = require('rng-core/wallet/device.js');
 		var arrWalletIndexes = Object.keys(assocMaxAddressIndexes);
 		if (arrWalletIndexes.length) {
 			removeAddressesAndWallets(function () {

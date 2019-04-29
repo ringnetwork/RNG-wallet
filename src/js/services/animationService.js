@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services').factory('animationService', function (isCordova) {
+angular.module('ringnetworkApp.services').factory('animationService', function (isCordova) {
     var root = {};
 
     var cachedTransitionState, cachedBackPanel;

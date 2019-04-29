@@ -15,9 +15,9 @@
 
  */
 
-var ecdsaSig = require('trustnote-pow-common/encrypt/signature.js');
+var ecdsaSig = require('rng-core/encrypt/signature.js');
 
-angular.module('trustnoteApp.controllers').controller('authConfirmationController', function ($scope, $timeout, configService, profileService, go, authService) {
+angular.module('ringnetworkApp.controllers').controller('authConfirmationController', function ($scope, $timeout, configService, profileService, go, authService) {
 
 	function extractDomainFromUrl(url) {
 		var domain_with_path = url.replace(/^https?:\/\//i, '');
@@ -27,7 +27,7 @@ angular.module('trustnoteApp.controllers').controller('authConfirmationControlle
 	}
 
 	var self = this;
-	var bbWallet = require('trustnote-pow-common/wallet/wallet.js');
+	var bbWallet = require('rng-core/wallet/wallet.js');
 
 	// the wallet to sign with
 	$scope.walletId = profileService.focusedClient.credentials.walletId;

@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('correspondentDevicesController',
+angular.module('ringnetworkApp.controllers').controller('correspondentDevicesController',
   function($scope, $timeout, configService, profileService, go, correspondentListService, $state, $rootScope, safeApplyService) {
 	
 	var self = this;
 	
-	var wallet = require('trustnote-pow-common/wallet/wallet.js');
-	var bots = require('trustnote-pow-common/bot/bots.js');
-	var mutex = require('trustnote-pow-common/base/mutex.js');
+	var wallet = require('rng-core/wallet/wallet.js');
+	var bots = require('rng-core/bot/bots.js');
+	var mutex = require('rng-core/base/mutex.js');
 	$scope.editCorrespondentList = false;
 	$scope.selectedCorrespondentList = {};
 	var fc = profileService.focusedClient;
@@ -106,7 +106,7 @@ angular.module('trustnoteApp.controllers').controller('correspondentDevicesContr
 					unlock();
 					return console.log('device '+device_address+' is not removable');
 				}
-				var device = require('trustnote-pow-common/wallet/device.js');
+				var device = require('rng-core/wallet/device.js');
 
 				// send message to paired device
 				// this must be done before removing the device

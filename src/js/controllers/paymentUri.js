@@ -1,5 +1,5 @@
 'use strict';
-angular.module('trustnoteApp.controllers').controller('paymentUriController',
+angular.module('ringnetworkApp.controllers').controller('paymentUriController',
   function($rootScope, $stateParams, $location, $timeout, profileService, configService, lodash, bitcore, go) {
 
     function strip(number) {

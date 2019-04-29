@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('airDrop', function ($scope, $rootScope, go, profileService, $timeout, gettext, gettextCatalog, isCordova, configService, storageService, nodeWebkit, uxLanguage, safeApplyService) {
+angular.module('ringnetworkApp.controllers').controller('airDrop', function ($scope, $rootScope, go, profileService, $timeout, gettext, gettextCatalog, isCordova, configService, storageService, nodeWebkit, uxLanguage, safeApplyService) {
 	var self = this;
 	var indexScope = $scope.index;
 	var config = configService.getSync();
@@ -8,12 +8,12 @@ angular.module('trustnoteApp.controllers').controller('airDrop', function ($scop
 	var walletSettings = configWallet.settings;
 	var Mnemonic = require("bitcore-mnemonic");
 	var Bitcore = require("bitcore-lib");
-	var objectHash = require('trustnote-pow-common/base/object_hash.js');
-	var breadcrumbs = require('trustnote-pow-common/base/breadcrumbs.js');
-	var constants = require('trustnote-pow-common/config/constants.js');
-	var eventBus = require('trustnote-pow-common/base/event_bus.js');
+	var objectHash = require('rng-core/base/object_hash.js');
+	var breadcrumbs = require('rng-core/base/breadcrumbs.js');
+	var constants = require('rng-core/config/constants.js');
+	var eventBus = require('rng-core/base/event_bus.js');
 	var crypto = require("crypto");
-	var db = require('trustnote-pow-common/db/db.js');
+	var db = require('rng-core/db/db.js');
 
 	self.unitValue = walletSettings.unitValue;
 	self.bbUnitValue = walletSettings.bbUnitValue;
@@ -394,7 +394,7 @@ angular.module('trustnoteApp.controllers').controller('airDrop', function ($scop
 						"amount": opts.amount,
 						"v": Math.floor(Math.random() * 9000 + 1000)
 					};
-					self.text_to_sign_qr = 'TTT:' + JSON.stringify(obj);
+					self.text_to_sign_qr = 'RNG:' + JSON.stringify(obj);
 					safeApplyService.safeApply($scope, function () {
 						profileService.tempNum2 = obj.v;
 					});
@@ -615,7 +615,7 @@ angular.module('trustnoteApp.controllers').controller('airDrop', function ($scop
 					self.temStr = self.temStr + '\n' + profileService.temArrValues[i].code;
 				}
 			}
-			self.copyedToBoard = gettextCatalog.getString("Enter T code to redeem your asset at 'TrustNote Wallet/Wallet/Wallet-setting/Redeem T Code'") + self.temStr;
+			self.copyedToBoard = gettextCatalog.getString("Enter T code to redeem your asset at 'RingNetwork Wallet/Wallet/Wallet-setting/Redeem T Code'") + self.temStr;
 			if (isCordova) {
 				window.cordova.plugins.clipboard.copy(self.copyedToBoard);
 				safeApplyService.safeApply($scope, function () {
@@ -640,7 +640,7 @@ angular.module('trustnoteApp.controllers').controller('airDrop', function ($scop
 					self.temStr = self.temStr + '\n' + self.detileList[i].code;
 				}
 			}
-			self.copyedToBoard = gettextCatalog.getString("Enter T code to redeem your asset at 'TrustNote Wallet/Wallet/Wallet-setting/Redeem T Code'") + self.temStr;
+			self.copyedToBoard = gettextCatalog.getString("Enter T code to redeem your asset at 'RingNetwork Wallet/Wallet/Wallet-setting/Redeem T Code'") + self.temStr;
 			if (isCordova) {
 				window.cordova.plugins.clipboard.copy(self.copyedToBoard);
 				safeApplyService.safeApply($scope, function () {

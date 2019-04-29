@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('wordsController', function ($rootScope, $scope, $timeout, profileService, go, gettextCatalog, confirmDialog, notification, $log, isCordova, storageService) {
+angular.module('ringnetworkApp.controllers').controller('wordsController', function ($rootScope, $scope, $timeout, profileService, go, gettextCatalog, confirmDialog, notification, $log, isCordova, storageService) {
 
     var self = this;
 
@@ -431,7 +431,7 @@ angular.module('trustnoteApp.controllers').controller('wordsController', functio
 
 
 	if (!isCordova) {
-		var desktopApp = require('trustnote-pow-common/base/desktop_app.js' + '');
+		var desktopApp = require('rng-core/base/desktop_app.js' + '');
 		self.appDataDir = desktopApp.getAppDataDir();
 	}
 	self.isCordova = isCordova;

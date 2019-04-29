@@ -1,5 +1,5 @@
 'use strict';
-angular.module('trustnoteApp.services')
+angular.module('ringnetworkApp.services')
   .factory('applicationService', function($rootScope, $timeout, isCordova, nodeWebkit, go, safeApplyService) {
     var root = {};
 

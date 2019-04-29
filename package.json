@@ -1,11 +1,11 @@
 {
     "name": "rng-wallet",
     "description": "Make payment fun",
-    "author": "Ring Network",
+    "author": "RingNetwork",
     "version": "1.0.0",
     "keywords": [
         "wallet",
-        "ring network",
+        "dag",
         "decentralized",
         "multisignature",
         "bitcoin"
@@ -78,7 +78,7 @@
         "vinyl-source-stream": "^2.0.0"
     },
     "build": {
-        "appId": "org.trustnote.smartwallet",
+        "appId": "org.ringnetwork.smartwallet",
         "nwVersion": "0.26.6",
         "packed": false,
         "targets": [
@@ -100,7 +100,7 @@
             "devDependencies",
             "build"
         ],
-        "output": "../rngbuilds/",
+        "output": "../builds/",
         "outputPattern": "RingNetwork",
         "win": {
             "productName": "RingNetwork",

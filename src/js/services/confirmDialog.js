@@ -1,7 +1,7 @@
 
 'use strict';
 
-angular.module('trustnoteApp.services').factory('confirmDialog', function($log, $timeout, gettextCatalog, isCordova) {
+angular.module('ringnetworkApp.services').factory('confirmDialog', function($log, $timeout, gettextCatalog, isCordova) {
   var root = {};
 
 

@@ -19,7 +19,7 @@ msgstr "-- Wählen Sie einen Mitunterzeichner --"
 
 #: public/views/preferencesGlobal.html:135
 msgid "About Trustnote"
-msgstr "Über TrustNote"
+msgstr "Über RingNetwork"
 
 #: src/js/controllers/copayers.js:8
 #: src/js/controllers/preferencesDelete.js:9
@@ -90,7 +90,7 @@ msgstr "Alle Wallet-Adressen"
 
 #: public/views/translators.html:52
 msgid "All contributions to Trustnote's translation are welcome. Sign up at crowdin.com and join the Trustnote project at"
-msgstr "Alle Beiträge zur TrustNote-Übersetzung sind willkommen. Melde dich bei crowdin.com an und tritt dem TrustNote-Projekt bei"
+msgstr "Alle Beiträge zur RingNetwork-Übersetzung sind willkommen. Melde dich bei crowdin.com an und tritt dem RingNetwork-Projekt bei"
 
 #: public/views/modals/multi-payment.html:65
 msgid "Already Paid"
@@ -216,7 +216,7 @@ msgstr "Browser nicht unterstützt"
 
 #: public/views/modals/destination-address.html:119
 msgid "Trustnote address"
-msgstr "TrustNote-Adresse"
+msgstr "RingNetwork-Adresse"
 
 #: public/views/includes/password.html:24
 msgid "CANCEL"
@@ -369,7 +369,7 @@ msgstr "Konnte nicht importiert werden. Überprüfen Sie die Eingabedatei und da
 
 #: src/js/controllers/walletHome.js:49
 msgid "Could not recognize a valid Trustnote QR Code"
-msgstr "Es konnte kein gültiger TrustNote-QR-Code erkannt werden"
+msgstr "Es konnte kein gültiger RingNetwork-QR-Code erkannt werden"
 
 #: src/js/controllers/walletHome.js:598
 msgid "Could not send payment"
@@ -490,7 +490,7 @@ msgstr "CSV-Datei herunterladen"
 
 #: public/views/splash.html:26
 msgid "Download the entire Trustnote database"
-msgstr "Laden Sie die gesamte TrustNote-Datenbank herunter"
+msgstr "Laden Sie die gesamte RingNetwork-Datenbank herunter"
 
 #: public/views/correspondentDevice.html:26
 #: public/views/modals/destination-address.html:38
@@ -758,7 +758,7 @@ msgstr "Multi-Wallet"
 
 #: public/views/walletHome.html:218
 msgid "My Trustnote address"
-msgstr "Meine TrustNote-Adresse"
+msgstr "Meine RingNetwork-Adresse"
 
 #: public/views/correspondentDevice.html:297
 msgid "My recording preference"
@@ -1437,7 +1437,7 @@ msgstr "Wallet-Name (bei der Erstellung)"
 
 #: src/js/services/profileService.js:392
 msgid "Wallet already in Trustnote:"
-msgstr "Wallet bereits in TrustNote:"
+msgstr "Wallet bereits in RingNetwork:"
 
 #: public/views/create.html:48
 msgid "Wallet name"
@@ -1605,7 +1605,7 @@ msgstr "oder"
 
 #: public/views/backup.html:24
 msgid "or backup all Trustnote data at"
-msgstr "oder sichern Sie alle TrustNote-Daten bei"
+msgstr "oder sichern Sie alle RingNetwork-Daten bei"
 
 #: public/views/modals/offer-contract.html:43
 msgid "peer pays"

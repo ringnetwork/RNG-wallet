@@ -1,19 +1,19 @@
 'use strict';
 
 // 冷钱包公钥 以及 相关信息
-angular.module('trustnoteApp.controllers').controller('preferencesColdController', function ($scope,  profileService, nodeWebkit, isCordova) {
+angular.module('ringnetworkApp.controllers').controller('preferencesColdController', function ($scope,  profileService, nodeWebkit, isCordova) {
 	var fc = profileService.focusedClient;
 	var self = this;
-	self.myDeviceAddress = require('trustnote-pow-common/wallet/device.js').getMyDeviceAddress();  // 获取我的 设备地址 getMyDeviceAddress
+	self.myDeviceAddress = require('rng-core/wallet/device.js').getMyDeviceAddress();  // 获取我的 设备地址 getMyDeviceAddress
 	self.credentials = fc.credentials;
 	self.objQr_to_show = {
 		"type": "c1",
-		"name": "TTT",
+		"name": "RNG",
 		"pub": self.credentials.xPubKey,
 		"n": 0,
 		"v": Math.floor(Math.random()*9000+1000)
 	};
-	self.qrcode = "TTT:" + JSON.stringify(self.objQr_to_show);
+	self.qrcode = "RNG:" + JSON.stringify(self.objQr_to_show);
 
 	// 此时 设置一个临时变量 用于验证钱包之间扫码的实效性
 	self.setTmpeNum = function () {

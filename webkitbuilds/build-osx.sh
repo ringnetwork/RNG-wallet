@@ -10,7 +10,7 @@ if [ -d "$dir" ]; then
 fi
 
 # set up your app name, architecture, and background image file name
-APP_NAME="trustnote"
+APP_NAME="ringnetwork"
 # ARCH="$1"
 ARCH="osx64"
 DMG_BACKGROUND_IMG="Background.png"
@@ -41,8 +41,8 @@ if [ $(echo " $_BACKGROUND_IMAGE_DPI_H != 72.0 " | bc) -eq 1 -o $(echo " $_BACKG
 fi
 
 echo "Signing the app ..."
-#codesign --sign="Developer ID Application: trustnote.org" --verbose=3 --deep "${PATH_NAME}${APP_NAME}.app"
-codesign -f -s "trustnote.org" --verbose=3 --deep "${PATH_NAME}${APP_NAME}.app"
+#codesign --sign="Developer ID Application: ringnetwork.org" --verbose=3 --deep "${PATH_NAME}${APP_NAME}.app"
+codesign -f -s "ringnetwork.org" --verbose=3 --deep "${PATH_NAME}${APP_NAME}.app"
 
 # clear out any old data
 echo "Clearing ..."

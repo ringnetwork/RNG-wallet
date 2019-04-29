@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services').factory('addressbookService', function(storageService, profileService) {
+angular.module('ringnetworkApp.services').factory('addressbookService', function(storageService, profileService) {
   var root = {};
 
   root.getLabel = function(addr, cb) {

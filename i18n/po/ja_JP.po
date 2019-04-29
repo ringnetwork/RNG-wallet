@@ -756,7 +756,7 @@ msgstr "マルチデバイスウォレット"
 
 #: public/views/walletHome.html:218
 msgid "My Trustnote address"
-msgstr "TrustNoteのアドレス"
+msgstr "RingNetworkのアドレス"
 
 #: public/views/correspondentDevice.html:297
 msgid "My recording preference"
@@ -1397,7 +1397,7 @@ msgstr "警告:"
 
 #: public/views/splash.html:53
 msgid "WELCOME TO TRUSTNOTE"
-msgstr "TrustNoteへようこそ"
+msgstr "RingNetworkへようこそ"
 
 #: public/views/copayers.html:24
 msgid "Waiting for co-signers"
