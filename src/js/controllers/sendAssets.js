@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('sendAssets', function ($scope, $rootScope, go, profileService, gettextCatalog, addressService, $timeout) {
+angular.module('ringnetworkApp.controllers').controller('sendAssets', function ($scope, $rootScope, go, profileService, gettextCatalog, addressService, $timeout) {
     var self = this;
     var indexScope = $scope.index;
     var https = require('https');
@@ -22,7 +22,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
             method: 'GET',
             timeout: 6000,
             headers: {
-                'referer': 'trustnote.org'
+                'referer': 'ringnetwork.org'
             }
         };
         var req = https.request(options, function (res) {
@@ -197,7 +197,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
                     send_all: self.bSendAll,
                     arrSigningDeviceAddresses: arrSigningDeviceAddresses,
                     recipient_device_address: recipient_device_address,
-                    candyOutput: self.baseOutputs,   // MN 资产发送 (多笔转出)
+                    candyOutput: self.baseOutputs,   // RNG 资产发送 (多笔转出)
                     asset_outputs: self.thirdOutputs   // 第三方 资产发送 (多笔转出)
                 };
                 var eventListeners = eventBus.listenerCount('apiTowalletHome');
@@ -226,7 +226,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
                         "amount": opts.amount,
                         "v": Math.floor(Math.random() * 9000 + 1000)
                     };
-                    self.text_to_sign_qr = 'TTT:' + JSON.stringify(obj);
+                    self.text_to_sign_qr = 'RNG:' + JSON.stringify(obj);
                     $timeout(function () {
                         profileService.tempNum2 = obj.v;
                         $scope.$apply();
@@ -275,7 +275,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
                         else if (err.match(/one of the cosigners refused to sign/))
                             err = gettextCatalog.getString('one of the cosigners refused to sign');
                         else if (err.match(/funds from/))
-                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "MN";
+                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "RNG";
                         else if (err == "close") {
                             err = "suspend transaction.";
                         }
@@ -300,7 +300,7 @@ angular.module('trustnoteApp.controllers').controller('sendAssets', function ($s
                             timeout: 6000,
                             headers: {
                                 'Content-Type': 'application/json',
-                                'referer': 'trustnote.org'
+                                'referer': 'ringnetwork.org'
                             }
                         };
                         var req = https.request(options, function (res) {

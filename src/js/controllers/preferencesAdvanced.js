@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesAdvancedController',
+angular.module('ringnetworkApp.controllers').controller('preferencesAdvancedController',
   function($scope) {
 
   });

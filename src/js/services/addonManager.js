@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services').service('addonManager', function (lodash) {
+angular.module('ringnetworkApp.services').service('addonManager', function (lodash) {
 	var addons = [];
 
 	this.registerAddon = function (addonSpec) {

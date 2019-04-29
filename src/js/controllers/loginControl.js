@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('loginControl', function ($scope, $rootScope, go, profileService, gettextCatalog, addressService, $timeout, safeApplyService) {
+angular.module('ringnetworkApp.controllers').controller('loginControl', function ($scope, $rootScope, go, profileService, gettextCatalog, addressService, $timeout, safeApplyService) {
     var self = this;
-    var ecdsaSig = require('trustnote-pow-common/encrypt/signature.js');
+    var ecdsaSig = require('rng-core/encrypt/signature.js');
     var Bitcore = require('bitcore-lib');
-    var db = require('trustnote-pow-common/db/db.js');
+    var db = require('rng-core/db/db.js');
     var https = require('https');
 
     self.showLogining = false;
@@ -89,7 +89,7 @@ angular.module('trustnoteApp.controllers').controller('loginControl', function (
                     timeout: 6000,
                     headers: {
                         'Content-Type': 'application/json',
-                        'referer': 'trustnote.org'
+                        'referer': 'ringnetwork.org'
                     }
                 };
                 var req = https.request(options, function (res) {

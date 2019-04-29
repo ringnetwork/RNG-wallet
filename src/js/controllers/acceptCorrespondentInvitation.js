@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('acceptCorrespondentInvitationController',
+angular.module('ringnetworkApp.controllers').controller('acceptCorrespondentInvitationController',
   function($scope, $rootScope, $timeout, configService, profileService, isCordova, go, correspondentListService) {
 	
 	var self = this;
@@ -26,7 +26,7 @@ angular.module('trustnoteApp.controllers').controller('acceptCorrespondentInvita
 	};
 
 	function handleCode(code){
-		var conf = require('trustnote-pow-common/config/conf.js');
+		var conf = require('rng-core/config/conf.js');
 		var re = new RegExp('^'+conf.program+':', 'i');
 		code = code.replace(re, '');
 		var matches = code.match(/^([\w\/+]+)@([\w.:\/-]+)#([\w\/+-]+)$/);

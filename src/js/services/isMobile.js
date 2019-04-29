@@ -25,4 +25,4 @@ var isMobile = {
     }
 };
 
-angular.module('trustnoteApp.services').value('isMobile', isMobile);
+angular.module('ringnetworkApp.services').value('isMobile', isMobile);

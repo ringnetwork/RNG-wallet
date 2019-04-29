@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesAbout', function() {});
+angular.module('ringnetworkApp.controllers').controller('preferencesAbout', function() {});

@@ -1,18 +1,18 @@
 'use strict';
 
-var constants = require('trustnote-pow-common/config/constants.js');
-var eventBus = require('trustnote-pow-common/base/event_bus.js');
-var breadcrumbs = require('trustnote-pow-common/base/breadcrumbs.js');
+var constants = require('rng-core/config/constants.js');
+var eventBus = require('rng-core/base/event_bus.js');
+var breadcrumbs = require('rng-core/base/breadcrumbs.js');
 
 var Bitcore = require('bitcore-lib');
-var ecdsaSig = require('trustnote-pow-common/encrypt/signature.js');
+var ecdsaSig = require('rng-core/encrypt/signature.js');
 
-angular.module('trustnoteApp.controllers').controller('walletHomeController', function ($scope, $rootScope, $timeout, $modal, $log, notification, isCordova, profileService, lodash, configService, storageService, gettext, gettextCatalog, nodeWebkit, addressService, confirmDialog, animationService, addressbookService, correspondentListService, go, safeApplyService) {
+angular.module('ringnetworkApp.controllers').controller('walletHomeController', function ($scope, $rootScope, $timeout, $modal, $log, notification, isCordova, profileService, lodash, configService, storageService, gettext, gettextCatalog, nodeWebkit, addressService, confirmDialog, animationService, addressbookService, correspondentListService, go, safeApplyService) {
 
 	var self = this;
 	var home = this;
-	var conf = require('trustnote-pow-common/config/conf.js');
-	var chatStorage = require('trustnote-pow-common/db/chat_storage.js');
+	var conf = require('rng-core/config/conf.js');
+	var chatStorage = require('rng-core/db/chat_storage.js');
 	this.protocol = conf.program;
 	$rootScope.hideMenuBar = false;
 	$rootScope.wpInputFocused = false;
@@ -306,8 +306,8 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
 			$scope.address = address;
 			$scope.shared_address_cosigners = indexScope.shared_address_cosigners;
 
-			var walletGeneral = require('trustnote-pow-common/wallet/wallet_general.js');
-			var walletDefinedByAddresses = require('trustnote-pow-common/wallet/wallet_defined_by_addresses.js');
+			var walletGeneral = require('rng-core/wallet/wallet_general.js');
+			var walletDefinedByAddresses = require('rng-core/wallet/wallet_defined_by_addresses.js');
 			walletGeneral.readMyAddresses(function (arrMyAddresses) {
 				walletDefinedByAddresses.readSharedAddressDefinition(address, function (arrDefinition, creation_ts) {
 					$scope.humanReadableDefinition = correspondentListService.getHumanReadableDefinition(arrDefinition, arrMyAddresses, [], true);
@@ -715,14 +715,14 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
 		indexScope.setOngoingProcess(gettext('sending'), true);
 
         $timeout(function () {
-            var device = require('trustnote-pow-common/wallet/device.js');
+            var device = require('rng-core/wallet/device.js');
 
             if (self.binding) {
                 if (!recipient_device_address)
                     throw Error('recipient device address not known');
 
-                var walletDefinedByAddresses = require('trustnote-pow-common/wallet/wallet_defined_by_addresses.js');
-                var walletDefinedByKeys = require('trustnote-pow-common/wallet/wallet_defined_by_keys.js');
+                var walletDefinedByAddresses = require('rng-core/wallet/wallet_defined_by_addresses.js');
+                var walletDefinedByKeys = require('rng-core/wallet/wallet_defined_by_keys.js');
                 var my_address;
 
                 // walletDefinedByKeys.issueNextAddress(fc.credentials.walletId, 0, function (addressInfo) {  // never reuse addresses as the required output could be already present
@@ -854,7 +854,7 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
                 }
 
                 self.sendtoaddress = opts.to_address;
-                self.sendamount = opts.amount / 1000000 + "MN";
+                self.sendamount = opts.amount / 1000000 + "RNG";
 
                 var eventListeners = eventBus.listenerCount('apiTowalletHome');
 
@@ -882,7 +882,7 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
                         "amount": opts.amount,
                         "v": Math.floor(Math.random() * 9000 + 1000)
                     };
-                    self.text_to_sign_qr = 'TTT:' + JSON.stringify(obj);
+                    self.text_to_sign_qr = 'RNG:' + JSON.stringify(obj);
                     $timeout(function () {
                         profileService.tempNum2 = obj.v;
                         $scope.$apply();
@@ -935,7 +935,7 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
                         else if (err.match(/one of the cosigners refused to sign/))
                             err = gettextCatalog.getString('one of the cosigners refused to sign');
                         else if (err.match(/funds from/))
-                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "MN";
+                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "RNG";
                         else if (err == "close") {
                             err = "suspend transaction.";
                         }
@@ -960,7 +960,7 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
                         if (binding && binding.reverseAmount) { // create a request for reverse payment
                             if (!my_address)
                                 throw Error('my address not known');
-                            var paymentRequestCode = 'TTT:' + my_address + '?amount=' + binding.reverseAmount + '&asset=' + encodeURIComponent(binding.reverseAsset);
+                            var paymentRequestCode = 'RNG:' + my_address + '?amount=' + binding.reverseAmount + '&asset=' + encodeURIComponent(binding.reverseAsset);
                             var paymentRequestText = '[reverse payment](' + paymentRequestCode + ')';
                             device.sendMessageToDevice(recipient_device_address, 'text', paymentRequestText);
                             var body = correspondentListService.formatOutgoingMessage(paymentRequestText);
@@ -1260,7 +1260,7 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
 
 	this.setFromUri = function (uri) {
 		var objRequest;
-		require('trustnote-pow-common/base/uri.js').parseUri(uri, {
+		require('rng-core/base/uri.js').parseUri(uri, {
 			ifError: function (err) {
 			},
 			ifOk: function (_objRequest) {
@@ -1321,8 +1321,8 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
 
 			$scope.openInExplorer = function () {
 				var testnet = home.isTestnet ? 'testnet' : '';
-                // var url = 'https://' + testnet + 'explorer.trustnote.org/#' + btx.unit;
-                var url = 'http://' + testnet + 'explorer2-alpha.trustnote.org:8000/detail#' + btx.unit;
+                // var url = 'https://' + testnet + 'explorer.ringnetwork.org/#' + btx.unit;
+                var url = 'http://' + testnet + 'explorer2-alpha.ringnetwork.org:8000/detail#' + btx.unit;
 				if (typeof nw !== 'undefined')
 					nw.Shell.openExternal(url);
 				else if (isCordova)
@@ -1339,9 +1339,9 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
 			};
 
 			$scope.reSendPrivateMultiSigPayment = function () {
-				var indivisible_asset = require('trustnote-pow-common/asset/indivisible_asset');
-				var wallet_defined_by_keys = require('trustnote-pow-common/wallet/wallet_defined_by_keys');
-				var walletDefinedByAddresses = require('trustnote-pow-common/wallet/wallet_defined_by_addresses');
+				var indivisible_asset = require('rng-core/asset/indivisible_asset');
+				var wallet_defined_by_keys = require('rng-core/wallet/wallet_defined_by_keys');
+				var walletDefinedByAddresses = require('rng-core/wallet/wallet_defined_by_addresses');
 				var fc = profileService.focusedClient;
 
 				function success() {
@@ -1413,8 +1413,8 @@ angular.module('trustnoteApp.controllers').controller('walletHomeController', fu
 			};
 
 			$scope.sendPrivatePayments = function (correspondent) {
-				var indivisible_asset = require('trustnote-pow-common/asset/indivisible_asset');
-				var wallet_general = require('trustnote-pow-common/wallet/wallet_general');
+				var indivisible_asset = require('rng-core/asset/indivisible_asset');
+				var wallet_general = require('rng-core/wallet/wallet_general');
 				indivisible_asset.restorePrivateChains(btx.asset, btx.unit, btx.addressTo, function (arrRecipientChains, arrCosignerChains) {
 					wallet_general.sendPrivatePayments(correspondent.device_address, arrRecipientChains, true, null, function () {
 						modalInstance.dismiss('cancel');

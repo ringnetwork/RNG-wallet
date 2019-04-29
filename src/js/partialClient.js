@@ -67,22 +67,22 @@ function initWallet() {
         });
     }
 
-    // load angular.js and trustnote.js
+    // load angular.js and ringnetwork.js
     function loadCompleteClient(showClient) {
-        self._bTrustnoteCoreLoaded = false; //"fix" : Looks like you are loading multiple copies of trustnote core, which is not supported. Running 'npm dedupe' might help.
+        self._bTrustnoteCoreLoaded = false; //"fix" : Looks like you are loading multiple copies of ringnetwork core, which is not supported. Running 'npm dedupe' might help.
         var body = document.body;
         var page = document.createElement('div');
 
         // first step: load angular.js
-        // second step: load trustnote.js
+        // second step: load ringnetwork.js
         body.appendChild(page);
         var angularJs = document.createElement('script');
         angularJs.src = 'angular.js';
         angularJs.onload = function () {
-            var trustnoteJS = document.createElement('script');
-            trustnoteJS.src = 'trustnote.js';
-            body.appendChild(trustnoteJS);
-            trustnoteJS.onload = function () {
+            var ringnetworkJS = document.createElement('script');
+            ringnetworkJS.src = 'ringnetwork.js';
+            body.appendChild(ringnetworkJS);
+            ringnetworkJS.onload = function () {
                 if (showClient) showCompleteClient();
             }
         };

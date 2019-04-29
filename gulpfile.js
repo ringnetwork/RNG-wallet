@@ -86,14 +86,14 @@ gulp.task("concat_js", function() {
             "src/js/version.js",
             "src/js/init.js"
         ])
-        .pipe(concat("trustnote.js"))
+        .pipe(concat("ringnetwork.js"))
         .pipe(gulp.dest("./public/"));
 });
 
 gulp.task("concat_css", function() {
     return gulp
         .src(["src/css/*.css"])
-        .pipe(concat("trustnote.css"))
+        .pipe(concat("ringnetwork.css"))
         .pipe(gulp.dest("./public/css/"));
 });
 
@@ -127,17 +127,17 @@ gulp.task("copy_modules", function() {
 gulp.task("copy_osx", function() {
     return gulp
         .src(["webkitbuilds/build-osx.sh", "webkitbuilds/Background.png"])
-        .pipe(copy("../trustnotebuilds", { prefix: 1 }))
-        .pipe(gulp.dest("trustnotebuilds", { mode: "0754" }));
+        .pipe(copy("../builds", { prefix: 1 }))
+        .pipe(gulp.dest("builds", { mode: "0754" }));
 });
 // copy end
 
 // browserify start
-gulp.task("browserify_trustnote", function() {
-    return browserify("public/trustnote.js")
+gulp.task("browserify_ringnetwork", function() {
+    return browserify("public/ringnetwork.js")
         .exclude(["sqlite3", "nw.gui", "mysql", "ws", "regedit"])
         .bundle()
-        .pipe(source("trustnote.js"))
+        .pipe(source("ringnetwork.js"))
         .pipe(gulp.dest("./public/"));
 });
 
@@ -149,7 +149,7 @@ gulp.task("browserify_partialClient", function() {
         .pipe(gulp.dest("./public/"));
 });
 
-gulp.task("browserify", ["browserify_trustnote", "browserify_partialClient"]);
+gulp.task("browserify", ["browserify_ringnetwork", "browserify_partialClient"]);
 // browserify end
 
 gulp.task("concat", [
@@ -162,7 +162,7 @@ gulp.task("concat", [
 gulp.task("copy", ["copy_icon", "copy_modules"]);
 
 gulp.task("dmg", ["copy_osx"], function(cb) {
-    var worker = exec("../trustnotebuilds/build-osx.sh", {});
+    var worker = exec("../builds/build-osx.sh", {});
     worker.stdout.on("data", function(data) {
         console.log(data);
     });

@@ -1,8 +1,8 @@
 'use strict';
 
-var eventBus = require('trustnote-pow-common/base/event_bus.js');
+var eventBus = require('rng-core/base/event_bus.js');
 
-angular.module('trustnoteApp.controllers').controller('inviteCorrespondentDeviceController', function ($scope, $timeout, profileService, go, isCordova, correspondentListService, gettextCatalog, safeApplyService) {
+angular.module('ringnetworkApp.controllers').controller('inviteCorrespondentDeviceController', function ($scope, $timeout, profileService, go, isCordova, correspondentListService, gettextCatalog, safeApplyService) {
 
 	var self = this;
 
@@ -12,7 +12,7 @@ angular.module('trustnoteApp.controllers').controller('inviteCorrespondentDevice
 		});
 	}
 
-	var conf = require('trustnote-pow-common/config/conf.js');
+	var conf = require('rng-core/config/conf.js');
 	$scope.protocol = conf.program;
 	$scope.isCordova = isCordova;
 	var fc = profileService.focusedClient;

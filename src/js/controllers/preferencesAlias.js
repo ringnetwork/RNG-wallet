@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesAliasController',
+angular.module('ringnetworkApp.controllers').controller('preferencesAliasController',
   function($scope, $timeout, configService, profileService, go) {
     var config = configService.getSync();
     var fc = profileService.focusedClient;

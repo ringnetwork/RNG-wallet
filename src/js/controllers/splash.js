@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('splashController', function ($scope, $timeout, $log, configService, profileService, storageService, go, isCordova) {
+angular.module('ringnetworkApp.controllers').controller('splashController', function ($scope, $timeout, $log, configService, profileService, storageService, go, isCordova) {
     var self = this;
     this.saveDeviceName = function () {
         console.log('saveDeviceName: ' + self.deviceName);
         // require js
-        var device = require('trustnote-pow-common/wallet/device.js');
+        var device = require('rng-core/wallet/device.js');
         device.setDeviceName(self.deviceName);
         var opts = { deviceName: self.deviceName };
 
@@ -25,7 +25,7 @@ angular.module('trustnoteApp.controllers').controller('splashController', functi
     configService.get(function (err, config) {
         // if (err)
         // 	throw Error("failed to read config");
-        var thistempName = config.deviceName || "TrustNote";
+        var thistempName = config.deviceName || "RingNetwork";
         if (thistempName.length >= 20) {
             thistempName = thistempName.substr(0, 20);
         }
@@ -41,13 +41,13 @@ angular.module('trustnoteApp.controllers').controller('splashController', functi
         // 	return;
         // }
         var fs = require('fs' + '');
-        var desktopApp = require('trustnote-pow-common/base/desktop_app.js');
+        var desktopApp = require('rng-core/base/desktop_app.js');
         var appDataDir = desktopApp.getAppDataDir();
         var userConfFile = appDataDir + '/conf.json';
         fs.writeFile(userConfFile, JSON.stringify({ bLight: bLight, bWallet: true }, null, '\t'), 'utf8', function (err) {
             if (err)
                 throw Error('failed to write conf.json: ' + err);
-            var conf = require('trustnote-pow-common/config/conf.js');
+            var conf = require('rng-core/config/conf.js');
             // if (!conf.bLight)
             // 	throw Error("Failed to switch to light, please restart the app");
             self.step = 'device_name';

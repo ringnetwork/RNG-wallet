@@ -1,8 +1,8 @@
 'use strict';
 
-var constants = require('trustnote-pow-common/config/constants.js');
+var constants = require('rng-core/config/constants.js');
 
-angular.module('trustnoteApp.services').factory('txFormatService', function (profileService, configService, lodash) {
+angular.module('ringnetworkApp.services').factory('txFormatService', function (profileService, configService, lodash) {
 	var root = {};
 
 	var formatAmountStr = function (amount, asset) {
@@ -15,11 +15,11 @@ angular.module('trustnoteApp.services').factory('txFormatService', function (pro
 		return profileService.formatAmount(amount, assetName) + ' ' + unitName;
 	};
 
-// 更改代码 交易小费单位是MN
+// 更改代码 交易小费单位是RNG
 
 	var formatFeeStr = function (fee) {
 		if (!fee) return;
-		return fee/1000000 + ' MN';
+		return fee/1000000 + ' RNG';
 	};
 
 

@@ -1,27 +1,25 @@
-[![CircleCI](https://img.shields.io/circleci/project/github/trustnote/trustnote-wallet/master.svg)](https://circleci.com/gh/trustnote/trustnote-wallet/)
+## RingNetwork
 
-## TrustNote
+RingNetwork is an open source project that provides reliable and trusted public blockchain network services. The wallet created for the community is also named RingNetwork. This project is supported by the RingNetwork Foundation.
 
-TrustNote is an open source project that provides reliable and trusted public blockchain network services. The wallet created for the community is also named TrustNote. This project is supported by the TrustNote Foundation.
+RingNetwork wallet is safe, simple and easy to use, it supports transfer TRC20 Tokens, send private instant messaging, provide security solutions, etc.
 
-TrustNote wallet is safe, simple and easy to use, it supports transfer TRC20 Tokens, send private instant messaging, provide security solutions, etc.
+We welcome everyone joins this open source community to build decentralized applications running on a fast, scalable, and truly decentralized blockchain powered by RingNetwork.
 
-We welcome everyone joins this open source community to build decentralized applications running on a fast, scalable, and truly decentralized blockchain powered by TrustNote.
-
-Please visit TrustNote official site [trustnote.org](https://trustnote.org/) to get more information.
+Please visit RingNetwork official site [ringnetwork.org](https://ringnetwork.org/) to get more information.
 
 ## Download
 
 Official Site:
-- [trustnote.org](https://trustnote.org/application.html)
+- [ringnetwork.org](https://ringnetwork.org/application.html)
 
 Github release:
-- [github.com](https://github.com/trustnote/trustnote-wallet/releases)
+- [github.com](https://github.com/ringnetwork/rng-wallet/releases)
 
 
 ## Installation
 
-We provide executable programs for multiple platforms. You can either start using the TrustNote wallet by clicking the download link above, or you can use the source code to compile into an executable program.
+We provide executable programs for multiple platforms. You can either start using the RingNetwork wallet by clicking the download link above, or you can use the source code to compile into an executable program.
 
 #### Dependences
 
@@ -59,14 +57,14 @@ Please refer to [windows-build-tools](https://github.com/felixrieseberg/windows-
 #### Clone project code
 
 ```sh
-git clone https://github.com/trustnote/trustnote-pow-wallet.git
-cd trustnote-pow-wallet
+git clone https://github.com/ringnetwork/rng-wallet.git
+cd rng-wallet
 ```
 
 #### Compile
 
 ```sh
-# ./trustnote-pow-wallet
+# ./rng-wallet
 
 bower install
 npm install
@@ -81,18 +79,18 @@ cd ../..
 #### Execute
 
 ```sh
-# ./trustnote-pow-wallet
+# ./rng-wallet
 npm run start
 ```
 
 #### Package
 
-The release package will be generated under ../trustnotebuilds
+The release package will be generated under ../ringnetworkbuilds
 
 ```
 --|
-  | trustnote-pow-wallet
-  | trustnotebuilds
+  | rng-wallet
+  | builds
 ```
 
 ##### Android
@@ -123,17 +121,17 @@ The release package will be generated under ../trustnotebuilds
 
 ## Wallet Backup and Restore
 
-Once the user starts to use TrustNote Wallet, cache files will be generated in the user directory to store data and user profiles, and to prevent personal data loss due to incorrect uninstallation, these caches files won’t be deleted after installation, all data will be recovered after reinstalling the software. If the user decides to delete these data, please follow the instructions below:
+Once the user starts to use RingNetwork Wallet, cache files will be generated in the user directory to store data and user profiles, and to prevent personal data loss due to incorrect uninstallation, these caches files won’t be deleted after installation, all data will be recovered after reinstalling the software. If the user decides to delete these data, please follow the instructions below:
 
-* macOS: `~/Library/Application Support/TTT`
-* Linux: `~/.config/TTT`
-* Windows: `%LOCALAPPDATA%\TTT`
+* macOS: `~/Library/Application Support/RNG`
+* Linux: `~/.config/RNG`
+* Windows: `%LOCALAPPDATA%\RNG`
 
 
 ## Issues and Questions
 
-* [GitHub Issues](https://github.com/trustnote/trustnote-wallet/issues)
-* [Email Support](mailto:foundation@trustnote.org)
+* [GitHub Issues](https://github.com/ringnetwork/rng-wallet/issues)
+* [Email Support](mailto:foundation@ringnetwork.org)
 
 ## Translation
 

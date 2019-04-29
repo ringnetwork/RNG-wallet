@@ -140,18 +140,18 @@
 				</label>
 				<div class="divinput">
 
-					<!--**********************8 ***********8 ***********8 ***********8 ***********8 ***********8 红包中 单个金额X MN  ***********8 ***********8 ***********8 ***********8 ***********8 -->
+					<!--**********************8 ***********8 ***********8 ***********8 ***********8 ***********8 红包中 单个金额X RNG  ***********8 ***********8 ***********8 ***********8 ***********8 -->
 					<input type="number" name="candyAmount" id="candyAmount" step="0.01"
 						   ng-class="{'lang-enp':airD.checkSymbolLength()}"
 						   valid-amount="{{index.arrBalances[0].asset}}"
 						   ng-model="airD.candyAmount"
 						   autocomplete="off"
 						   placeholder="0.00"
-						   ng-change="airD.checkNumMN()"
+						   ng-change="airD.checkNumRNG()"
 					>
 					<span class="placeholder" translate>Amount each</span>
 					<a style="line-height: 45px;height: 45px;padding-right: 12px;" class="postfix" ng-if="index.arrBalances.length > 0 && index.arrBalances[index.assetIndex].asset === 'base'">
-						MN
+						RNG
 					</a>
 					<a style="line-height: 45px;height: 45px;padding-right: 12px;" class="postfix" ng-if="index.arrBalances.length > 0 && index.arrBalances[index.assetIndex].asset !== 'base' && index.arrBalances[index.assetIndex].asset !== index.BLACKBYTES_ASSET">
 						{{index.arrBalances[index.assetIndex].symbol.substr(0,4)}}
@@ -177,7 +177,7 @@
 					<span translate>Total amount</span>
 					<span ng-model="airD.candyTotalCount" style="font-size: 21px">{{(airD.redPacketCount * airD.candyAmount).toFixed(4)}}</span>
 					<span ng-if="index.arrBalances.length > 0 && index.arrBalances[index.assetIndex].asset !== 'base' ">{{index.arrBalances[index.assetIndex].symbol.substr(0,4)}}</span>
-					<span ng-if="index.arrBalances.length > 0 && index.arrBalances[index.assetIndex].asset === 'base' "> MN </span>
+					<span ng-if="index.arrBalances.length > 0 && index.arrBalances[index.assetIndex].asset === 'base' "> RNG </span>
 					<span class="amount-pop" ng-if="!airD.submitAble" translate>Youe balance is not enough</span>
 				</p>
 			</div>

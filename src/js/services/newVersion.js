@@ -1,8 +1,8 @@
 'use strict';
 
-var eventBus = require('trustnote-pow-common/base/event_bus.js');
+var eventBus = require('rng-core/base/event_bus.js');
 
-angular.module('trustnoteApp.services').factory('newVersion', function(storageService){
+angular.module('ringnetworkApp.services').factory('newVersion', function(storageService){
 	var root = {};
 	root.showUpdate = 0;
 

@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: trustnote\n"
+"Project-Id-Version: ringnetwork\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: trustnote\n"
+"X-Crowdin-Project: ringnetwork\n"
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /master/i18n/po/template.pot\n"
 "Last-Translator: testz <testzcrypto@gmail.com>\n"
@@ -26,8 +26,8 @@ msgid "-- Select co-signer --"
 msgstr "-- 选择多重签名账户 --"
 
 #: public/views/preferencesGlobal.html:135
-msgid "About TrustNote"
-msgstr "关于TrustNote"
+msgid "About RingNetwork"
+msgstr "关于RingNetwork"
 
 #: src/js/controllers/copayers.js:8
 #: src/js/controllers/preferencesDelete.js:9
@@ -97,8 +97,8 @@ msgid "All Wallet Addresses"
 msgstr "历史地址列表"
 
 #: public/views/translators.html:52
-msgid "All contributions to TrustNote's translation are welcome. Sign up at crowdin.com and join the TrustNote project at"
-msgstr "欢迎为TrustNote的翻译添砖加瓦，注册crowdin.com并参与TrustNote项目"
+msgid "All contributions to RingNetwork's translation are welcome. Sign up at crowdin.com and join the RingNetwork project at"
+msgstr "欢迎为RingNetwork的翻译添砖加瓦，注册crowdin.com并参与RingNetwork项目"
 
 #: public/views/modals/multi-payment.html:65
 msgid "Already Paid"
@@ -220,8 +220,8 @@ msgid "Browser unsupported"
 msgstr "浏览器不支持"
 
 #: public/views/modals/destination-address.html:119
-msgid "TrustNote address"
-msgstr "TrustNote地址"
+msgid "RingNetwork address"
+msgstr "RingNetwork地址"
 
 #: public/views/includes/password.html:24
 msgid "CANCEL"
@@ -373,8 +373,8 @@ msgid "Could not import. Check input file and password"
 msgstr "无法导入，请检查输入文件和密码"
 
 #: src/js/controllers/walletHome.js:49
-msgid "Could not recognize a valid TrustNote QR Code"
-msgstr "无法识别有效的TrustNote二维码"
+msgid "Could not recognize a valid RingNetwork QR Code"
+msgstr "无法识别有效的RingNetwork二维码"
 
 #: src/js/controllers/walletHome.js:598
 msgid "Could not send payment"
@@ -494,8 +494,8 @@ msgid "Download CSV file"
 msgstr "下载交易记录"
 
 #: public/views/splash.html:26
-msgid "Download the entire TrustNote database"
-msgstr "下载完整的TrustNote账本"
+msgid "Download the entire RingNetwork database"
+msgstr "下载完整的RingNetwork账本"
 
 #: public/views/correspondentDevice.html:26
 #: public/views/modals/destination-address.html:38
@@ -752,7 +752,7 @@ msgid "Multidevice Wallet"
 msgstr "多重签名钱包"
 
 #: public/views/walletHome.html:218
-msgid "My TrustNote address"
+msgid "My RingNetwork address"
 msgstr "我的收款地址"
 
 #: public/views/correspondentDevice.html:297
@@ -1385,8 +1385,8 @@ msgid "WARNINGS:"
 msgstr "警告："
 
 #: public/views/splash.html:53
-msgid "Welcome To TrustNote"
-msgstr "欢迎来到TrustNote"
+msgid "Welcome To RingNetwork"
+msgstr "欢迎来到RingNetwork"
 
 #: public/views/copayers.html:24
 msgid "Waiting for co-signers"
@@ -1422,7 +1422,7 @@ msgid "Wallet Name (at creation)"
 msgstr "钱包初始名称"
 
 #: src/js/services/profileService.js:392
-msgid "Wallet already in TrustNote:"
+msgid "Wallet already in RingNetwork:"
 msgstr "钱包已存在："
 
 #: public/views/create.html:48
@@ -1594,8 +1594,8 @@ msgid "or"
 msgstr "或"
 
 #: public/views/backup.html:24
-msgid "or backup all TrustNote data at"
-msgstr "或备份所有TrustNote数据在"
+msgid "or backup all RingNetwork data at"
+msgstr "或备份所有RingNetwork数据在"
 
 #: public/views/modals/offer-contract.html:43
 msgid "peer pays"
@@ -1679,7 +1679,7 @@ msgid "The software you are about to use functions as a free, open source, and m
 msgstr "您即将使用的是一款免费开源的数字钱包软件。"
 
 msgid "The software does not constitute an account where the developer of this software or other third parties serve as financial intermediaries or custodians of your notes or other valuables."
-msgstr "本软件不会开设账户，以使软件开发者或其它第三方机构成为您的TTT或其它有价资产的金融中介或保管者。"
+msgstr "本软件不会开设账户，以使软件开发者或其它第三方机构成为您的RNG或其它有价资产的金融中介或保管者。"
 
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."
 msgstr "鉴于本软件已完成公开测试并会根据开源用户和开发者社区的反馈进行持续改进，我们不保证本软件不存在缺陷。"
@@ -1691,13 +1691,13 @@ msgid "You are responsible for safekeeping your passwords, private key pairs, PI
 msgstr "您有责任妥善保管您的登录助记词、私钥、交易密码和您用以访问本软件的其它代码。"
 
 msgid "<b>IF YOU LOSE ACCESS TO YOUR TRUSTNOTE WALLET, YOU ACKNOWLEDGE AND AGREE THAT ANY NOTES OR OTHER VALUABLES YOU HAVE ASSOCIATED WITH THAT TRUSTNOTE WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>若您失去对本钱包的控制权，您知悉并接受任何与本钱包关联的TTT和其它有价资产将无法找回。</b>"
+msgstr "<b>若您失去对本钱包的控制权，您知悉并接受任何与本钱包关联的RNG和其它有价资产将无法找回。</b>"
 
 msgid "All transaction requests are irreversible."
 msgstr "所有交易请求都是不可逆的。"
 
-msgid "The authors of the software cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the TrustNote network."
-msgstr "软件作者无法帮您恢复丢失或忘记的私钥或密码，也不能保证交易会被确认，因为他们并没有TrustNote网络的控制权。"
+msgid "The authors of the software cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the RingNetwork network."
+msgstr "软件作者无法帮您恢复丢失或忘记的私钥或密码，也不能保证交易会被确认，因为他们并没有RingNetwork网络的控制权。"
 
 msgid "To the fullest extent permitted by law, this software is provided “as is” and no representations or warranties can be made of any kind, express or implied, including but not limited to the warranties of merchantability, fitness or a particular purpose and noninfringement."
 msgstr "在法律允许的最大范围内，本软件会以当前形式提供，不存在一切其它明示或默示保证，包括（但不限于）关于适销性、合理性或某一特定用途以及非侵权的默示保证。"
@@ -1915,8 +1915,8 @@ msgstr "钱包恢复过程中，请耐心等待，切勿退出软件。"
 msgid "Delete the whole chat history with {{ name }} ?"
 msgstr "确定要删除与{{ name }}的全部聊天记录么？"
 
-msgid "TTT Wallet"
-msgstr "TTT 钱包"
+msgid "RNG Wallet"
+msgstr "RNG 钱包"
 
 msgid "Preparing camera..."
 msgstr "准备相机..."
@@ -2104,8 +2104,8 @@ msgstr "正在生成"
 msgid "Generating..."
 msgstr "正在生成..."
 
-msgid "Enter T code to redeem your asset at 'TrustNote Wallet/Wallet/Wallet-setting/Redeem T Code'"
-msgstr "在“TrustNote钱包-钱包-钱包设置-兑换T口令”界面，输入单个T口令立即兑换资产："
+msgid "Enter T code to redeem your asset at 'RingNetwork Wallet/Wallet/Wallet-setting/Redeem T Code'"
+msgstr "在“RingNetwork钱包-钱包-钱包设置-兑换T口令”界面，输入单个T口令立即兑换资产："
 
 msgid "Copy all"
 msgstr "复制全部"
@@ -2179,8 +2179,8 @@ msgstr "准备工作"
 msgid "Two phones without root or you think it’s safe."
 msgstr "两部没有Root刷机过，你认为非常安全的手机；"
 
-msgid "Installed the newest version 1.1.5 and download from trustnote.org"
-msgstr "两部手机都要从trustnote.org下载最新版 1.1.5版本TrustNote；"
+msgid "Installed the newest version 1.1.5 and download from ringnetwork.org"
+msgstr "两部手机都要从ringnetwork.org下载最新版 1.1.5版本RingNetwork；"
 
 msgid "One of phone open airplane mode as cold wallet,keep it offline always because it's saved your privacy key."
 msgstr "将其中一部手机关闭 Wifi并开启飞行模式, 作为冷钱包。这部手机一定要断网, 因为是存有你 ** 私钥 ** 的设备。"
@@ -2189,7 +2189,7 @@ msgid "Watch wallet"
 msgstr "观察钱包"
 
 msgid "If you want to use cold wallet in Trustnote version 1.1.5,you should watch the wallet at first."
-msgstr "如果你想使用TrustNote1.1.5的冷钱包功能, 首先要观察该钱包。"
+msgstr "如果你想使用RingNetwork1.1.5的冷钱包功能, 首先要观察该钱包。"
 
 msgid "note:one of phone connected network as <b>hot wallet</b> to watch <b>cold wallet</b>,the other one keep offline for Authorized signature."
 msgstr "注: 你的联网手机是热钱包, 用来作为<b>观察钱包</b>, 未联网手机作为<b>冷钱包用</b>作离线签名授权"
@@ -2233,14 +2233,14 @@ msgstr "接着第 1 部步操作, 扫描未联网手机的冷钱包认证二维�
 msgid "Cold wallet transaction signature"
 msgstr "冷钱包交易签名"
 
-msgid "Let’s use offline signature function to transfer TTT:"
-msgstr "我们以使用离线签名功能转账 TTT 为例:"
+msgid "Let’s use offline signature function to transfer RNG:"
+msgstr "我们以使用离线签名功能转账 RNG 为例:"
 
-msgid "Choose one watch wallet that is the same with cold wallet - go to TTT transaction page,input all the transfer information - click “Confirm” button - generate QR code"
+msgid "Choose one watch wallet that is the same with cold wallet - go to RNG transaction page,input all the transfer information - click “Confirm” button - generate QR code"
 msgstr "进入观察钱包的交易界面, 输入转账信息 -> 点击“确定” -> 生成“交易预览”二维码"
 
 msgid "Scan step1’s QR code from hot wallet - click”sign” - input password - generate “Authorized” QR code"
-msgstr "使用TrustNote内的扫码功能扫描第 1 步生成的 “交易预览”二维码 -> 点击 “授权签名” -> 输入密码 -> 生成”完成授权” 的二维码"
+msgstr "使用RingNetwork内的扫码功能扫描第 1 步生成的 “交易预览”二维码 -> 点击 “授权签名” -> 输入密码 -> 生成”完成授权” 的二维码"
 
 msgid "Click”next”button - click”scan”button,then scan “Authorized” QR code from cold wallet generate in step2 - sending transaction"
 msgstr "点击第 1 步中 “交易预览” 页面的 “下一步” 按钮 -> 点击“交易预览”页面上扫描图标 -> 扫描第 2 步中 “完成授权”的二维码 ->发送交易"
@@ -2269,8 +2269,8 @@ msgstr "未解锁"
 msgid "Unlocked"
 msgstr "已解锁"
 
-msgid "Please allow TrustNote to access your camera"
-msgstr "请允许TrustNote使用相机权限"
+msgid "Please allow RingNetwork to access your camera"
+msgstr "请允许RingNetwork使用相机权限"
 
 msgid "Login"
 msgstr "登录"

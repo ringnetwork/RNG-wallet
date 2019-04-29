@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesDeviceNameController',
+angular.module('ringnetworkApp.controllers').controller('preferencesDeviceNameController',
   function($scope, $timeout, configService, go) {
     var config = configService.getSync();
     this.deviceName = config.deviceName;
 
     this.save = function() {
       var self = this;
-	  var device = require('trustnote-pow-common/wallet/device.js');
+	  var device = require('rng-core/wallet/device.js');
       device.setDeviceName(self.deviceName);
       var opts = {deviceName: self.deviceName};
 

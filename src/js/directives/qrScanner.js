@@ -1,7 +1,7 @@
 'use strict';
-var breadcrumbs = require('trustnote-pow-common/base/breadcrumbs.js');
+var breadcrumbs = require('rng-core/base/breadcrumbs.js');
 
-angular.module('trustnoteApp.directives').directive('qrScanner', ['$rootScope', '$timeout', '$modal', 'isCordova', 'gettextCatalog', function ($rootScope, $timeout, $modal, isCordova, gettextCatalog) {
+angular.module('ringnetworkApp.directives').directive('qrScanner', ['$rootScope', '$timeout', '$modal', 'isCordova', 'gettextCatalog', function ($rootScope, $timeout, $modal, isCordova, gettextCatalog) {
 
 	var controller = function ($scope) {
 		$scope.cordovaOpenScanner = function () {
@@ -26,7 +26,7 @@ angular.module('trustnoteApp.directives').directive('qrScanner', ['$rootScope', 
 							window.ignoreMobilePause = false;
 							window.plugins.spinnerDialog.hide();
 						}, 100);
-						alert(gettextCatalog.getString('Please allow TrustNote to access your camera'));
+						alert(gettextCatalog.getString('Please allow RingNetwork to access your camera'));
 					}
 				);
 				if ($scope.beforeScan) {

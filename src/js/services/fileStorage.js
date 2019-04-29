@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services')
+angular.module('ringnetworkApp.services')
   .factory('fileStorageService', function() {
     var fileStorage = require('./fileStorage.js');
     var root = {};

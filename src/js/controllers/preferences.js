@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesController', function ($rootScope, profileService) {
+angular.module('ringnetworkApp.controllers').controller('preferencesController', function ($rootScope, profileService) {
     var self = this;
 
     self.showPubKey = function () {

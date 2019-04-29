@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.services')
+angular.module('ringnetworkApp.services')
 	.factory('storageService', function (fileStorageService, localStorageService, $log, isCordova) {
 
         var root = {};

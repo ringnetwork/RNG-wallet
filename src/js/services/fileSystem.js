@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('trustnoteApp.services')
+angular.module('ringnetworkApp.services')
 .factory('fileSystemService', function($log, isCordova) {
 	var root = {},
 		bFsInitialized = false;
 	
 	var fs = require('fs' + '');
 	try {
-		var desktopApp = require('trustnote-pow-common/base/desktop_app.js' + '');
+		var desktopApp = require('rng-core/base/desktop_app.js' + '');
 	} catch (e) {
 		
 	}

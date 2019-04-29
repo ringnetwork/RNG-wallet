@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesHubController',
+angular.module('ringnetworkApp.controllers').controller('preferencesHubController',
     function ($scope, $timeout, $log, configService, go) {
         var config = configService.getSync();
         this.hub = config.hub;
@@ -8,8 +8,8 @@ angular.module('trustnoteApp.controllers').controller('preferencesHubController'
 
         this.save = function () {
             var self = this;
-            var device = require('trustnote-pow-common/wallet/device.js');
-            var lightWallet = require('trustnote-pow-common/wallet/light_wallet.js');
+            var device = require('rng-core/wallet/device.js');
+            var lightWallet = require('rng-core/wallet/light_wallet.js');
             self.hub = self.hub.replace(/^wss?:\/\//i, '').replace(/^https?:\/\//i, '');
 
             $log.debug("hub:", self.hub);

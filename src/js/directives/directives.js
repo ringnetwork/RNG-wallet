@@ -16,13 +16,13 @@ function selectText(element) {
 	}
 }
 
-angular.module('trustnoteApp.directives')
+angular.module('ringnetworkApp.directives')
 	.directive('validAddress', ['$rootScope', 'profileService',
 		function ($rootScope, profileService) {
 			return {
 				require: 'ngModel',
 				link: function (scope, elem, attrs, ctrl) {
-					var ValidationUtils = require('trustnote-pow-common/validation/validation_utils.js');
+					var ValidationUtils = require('rng-core/validation/validation_utils.js');
 					var validator = function (value) {
 						if (!profileService.focusedClient)
 							return;
@@ -43,8 +43,8 @@ angular.module('trustnoteApp.directives')
 							return;
 						}
 
-						// trustnote uri
-						var conf = require('trustnote-pow-common/config/conf.js');
+						// ringnetwork uri
+						var conf = require('rng-core/config/conf.js');
 						var re = new RegExp('^' + conf.program + ':([A-Z2-7]{32})\b', 'i');
 						var arrMatches = value.match(re);
 						if (arrMatches) {
@@ -100,7 +100,7 @@ angular.module('trustnoteApp.directives')
                             return value;
                         }*/
 						//console.log('-- amount');
-						var constants = require('trustnote-pow-common/config/constants.js');
+						var constants = require('rng-core/config/constants.js');
 						var asset = attrs.validAmount;
 						var settings = configService.getSync().wallet.settings;
 						var unitValue = 1;
@@ -371,7 +371,7 @@ angular.module('trustnoteApp.directives')
 				$scope.logo_url = $scope.negative ? 'img/icons/icon-white-32.png' : 'img/icons/icon-black-32.png';
 			},
 			replace: true,
-			//template: '<img ng-src="{{ logo_url }}" alt="trustnote">'
+			//template: '<img ng-src="{{ logo_url }}" alt="ringnetwork">'
 			template: '<div><img ng-src="{{ logo_url }}" alt="Trustnote"><br>Trustnote</div>'
 		}
 	})

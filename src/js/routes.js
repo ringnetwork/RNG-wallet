@@ -1,10 +1,10 @@
 'use strict';
 
-var breadcrumbs = require('trustnote-pow-common/base/breadcrumbs.js');
+var breadcrumbs = require('rng-core/base/breadcrumbs.js');
 
 //Setting up route
 angular
-    .module('trustnoteApp')
+    .module('ringnetworkApp')
     .config(function ($logProvider, $stateProvider, $urlRouterProvider, $compileProvider) {
         $urlRouterProvider.otherwise('/');
 

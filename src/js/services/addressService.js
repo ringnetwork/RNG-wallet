@@ -1,6 +1,6 @@
 'use strict';
 'use strict';
-angular.module('trustnoteApp.services')
+angular.module('ringnetworkApp.services')
   .factory('addressService', function(profileService, $log, $timeout, lodash, gettextCatalog) {
     var root = {};
 

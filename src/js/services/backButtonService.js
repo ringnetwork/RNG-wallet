@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('trustnoteApp.services').factory('backButton', function($rootScope, $log, $deepStateRedirect, $document, $timeout, $state, go, gettextCatalog, lodash, profileService) {
+angular.module('ringnetworkApp.services').factory('backButton', function($rootScope, $log, $deepStateRedirect, $document, $timeout, $state, go, gettextCatalog, lodash, profileService) {
 	var root = {};
 	
 	root.dontDeletePath = false;

@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesDeleteWalletController',
+angular.module('ringnetworkApp.controllers').controller('preferencesDeleteWalletController',
 	function ($scope, $rootScope, $filter, $timeout, $modal, $log, storageService, notification, profileService, isCordova, go, gettext, gettextCatalog, animationService) {
 		this.isCordova = isCordova;
 		this.error = null;
 		var async = require('async');
-		var db = require('trustnote-pow-common/db/db.js');
+		var db = require('rng-core/db/db.js');
 		var delete_msg = gettextCatalog.getString('Are you sure you want to delete this wallet?');
 		var accept_msg = gettextCatalog.getString('Accept');
 		var cancel_msg = gettextCatalog.getString('Cancel');

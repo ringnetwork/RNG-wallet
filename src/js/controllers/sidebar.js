@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('sidebarController', function ($rootScope, lodash, profileService, configService, go) {
+angular.module('ringnetworkApp.controllers').controller('sidebarController', function ($rootScope, lodash, profileService, configService, go) {
 	var self = this;
 	self.walletSelection = false;
 

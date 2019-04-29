@@ -1,11 +1,11 @@
 'use strict';
 
-var constants = require('trustnote-pow-common/config/constants.js');
+var constants = require('rng-core/config/constants.js');
 
-angular.module('trustnoteApp.controllers').controller('qrcodeController', function ($scope, $rootScope, $timeout, $filter, $modal, $log, notification, isCordova, profileService, lodash, configService, storageService, gettext, gettextCatalog, nodeWebkit, addressService, confirmDialog, animationService, backButton, safeApplyService) {
+angular.module('ringnetworkApp.controllers').controller('qrcodeController', function ($scope, $rootScope, $timeout, $filter, $modal, $log, notification, isCordova, profileService, lodash, configService, storageService, gettext, gettextCatalog, nodeWebkit, addressService, confirmDialog, animationService, backButton, safeApplyService) {
 
     var self = this;
-    var conf = require('trustnote-pow-common/config/conf.js');
+    var conf = require('rng-core/config/conf.js');
     this.protocol = conf.program;
     var config = configService.getSync();
     var configWallet = config.wallet;

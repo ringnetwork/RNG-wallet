@@ -2,7 +2,7 @@
 
 // 配置服务脚本
 
-angular.module('trustnoteApp.services').factory('configService', function (storageService, lodash, $log, isCordova) {
+angular.module('ringnetworkApp.services').factory('configService', function (storageService, lodash, $log, isCordova) {
     var root = {};
     root.colorOpts = [
         "#0095ff",
@@ -22,7 +22,7 @@ angular.module('trustnoteApp.services').factory('configService', function (stora
         '#7A8C9E'
     ];
 
-    var constants = require('trustnote-pow-common/config/constants.js');
+    var constants = require('rng-core/config/constants.js');
     var isTestnet = constants.version.match(/t$/);
 
     // 配置时间戳地址
@@ -68,7 +68,7 @@ angular.module('trustnoteApp.services').factory('configService', function (stora
             totalCosigners: 6
         },
         // 钱包hub配置
-        // hub: (constants.alt === '2' && isTestnet) ? 'trustnote.org/bb-test' : 'galilei.trustnote.org/tn',
+        // hub: (constants.alt === '2' && isTestnet) ? 'ringnetwork.org/bb-test' : 'galilei.ringnetwork.org/tn',
         hub: root.hub[(Math.floor(Math.random() * (root.hub.length)))],
 
         // requires bluetooth permission on android
@@ -78,7 +78,7 @@ angular.module('trustnoteApp.services').factory('configService', function (stora
             return isCordova ? cordova.plugins.deviceName.name : require('os').hostname();
         },
 
-        // 更改钱包默认单位为MN
+        // 更改钱包默认单位为RNG
         // 钱包默认设置 wallet default config
         wallet: {
             requiredCosigners: 2,
@@ -87,7 +87,7 @@ angular.module('trustnoteApp.services').factory('configService', function (stora
             reconnectDelay: 5000,
             idleDurationMin: 4,
             settings: {
-                unitName: 'MN',
+                unitName: 'RNG',
                 unitValue: 1000000,
                 unitDecimals: 6,
                 unitCode: 'mega',

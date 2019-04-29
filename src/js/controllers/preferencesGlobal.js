@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('trustnoteApp.controllers').controller('preferencesGlobalController', function ($scope, $rootScope, $log, configService, uxLanguage, profileService) {
+angular.module('ringnetworkApp.controllers').controller('preferencesGlobalController', function ($scope, $rootScope, $log, configService, uxLanguage, profileService) {
 
     $scope.encrypt = !!profileService.profile.xPrivKeyEncrypted;
 
     this.init = function () {
         var config = configService.getSync();
         this.deviceName = config.deviceName;
-        this.myDeviceAddress = require('trustnote-pow-common/wallet/device.js').getMyDeviceAddress();
+        this.myDeviceAddress = require('rng-core/wallet/device.js').getMyDeviceAddress();
         this.hub = config.hub;
         this.showHub = false;
         this.clickTimesToShowHub = 3;
