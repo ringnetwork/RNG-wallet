@@ -44,7 +44,7 @@
 		font-weight: bold;
 		color: #333;
 	}
-	div.SeNameMN{
+	div.SeNameRNG{
 		float: right;
 		margin-right: 35px;
 		height: 45px;
@@ -94,7 +94,7 @@
 			<a ng-click="selectSubwallet()" class="db oh">
 				<div class="Seavatar">{{(indexCtl.alias || indexCtl.walletName) | limitTo: 1}}</div>
 				<div class="SeName">{{(indexCtl.alias || indexCtl.walletName)}}</div>
-				<div class="SeNameMN">
+				<div class="SeNameRNG">
 					<span ng-if="asset == 'base' || asset == indexCtl.BLACKBYTES_ASSET">{{mainWalletBalanceInfo.totalStr}}</span>
 					<span ng-if="asset != 'base' && asset != indexCtl.BLACKBYTES_ASSET">{{mainWalletBalanceInfo.total.toLocaleString()}}</span>
 				</div>

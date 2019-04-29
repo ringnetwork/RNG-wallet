@@ -1419,7 +1419,7 @@ angular.module('ringnetworkApp.controllers').controller('indexController', funct
                 if (!isNode) csvContent = 'data:text/csv;charset=utf-8,';
                 csvContent += 'Date,Destination,Note,Amount,Currency,Spot Value,Total Value,Tax Type,Category\n';
 
-                // 更改代码-下载CSV文件默认单位是MN
+                // 更改代码-下载CSV文件默认单位是RNG
                 var _amount, _note;
                 var dataString;
                 data.forEach(function (it, index) {
@@ -1434,7 +1434,7 @@ angular.module('ringnetworkApp.controllers').controller('indexController', funct
                     if (it.action == 'moved')
                         _note += ' Moved:' + it.amount
 
-                    dataString = formatDate(it.time * 1000) + ',' + formatString(it.addressTo) + ',' + _note + ',' + _amount / 1000000 + ',MN,,,,';
+                    dataString = formatDate(it.time * 1000) + ',' + formatString(it.addressTo) + ',' + _note + ',' + _amount / 1000000 + ',RNG,,,,';
                     csvContent += dataString + "\n";
 
                 });

@@ -70,8 +70,8 @@ angular.module('ringnetworkApp.controllers').controller('airDrop', function ($sc
 	};
 
 
-	// 判断 每个红包发送的 MN 个数
-	self.checkNumMN = function () {
+	// 判断 每个红包发送的 RNG 个数
+	self.checkNumRNG = function () {
 		if (typeof (self.candyAmount) != 'number') {
 			self.amountWarring = true;
 			self.amountWarringMsg = gettextCatalog.getString('Invalid amount');
@@ -226,7 +226,7 @@ angular.module('ringnetworkApp.controllers').controller('airDrop', function ($sc
 		var candyAddress = '';
 		//var arrCandyAddress = [];
 		var form = $scope.sendCandyForm;
-		var amount = form.candyAmount.$modelValue;  // MN 个数
+		var amount = form.candyAmount.$modelValue;  // RNG 个数
 		var amount1 = form.candyAmount.$modelValue;
 		var redPacketCount = form.redPacketCount.$modelValue;
 
@@ -267,7 +267,7 @@ angular.module('ringnetworkApp.controllers').controller('airDrop', function ($sc
 				merkle_proof = form.merkle_proof.$modelValue.trim();
 
 			if (asset === "base"){
-				var asset_name = "MN";
+				var asset_name = "RNG";
 				amount *= unitValue;
 				amount = Math.round(amount);
 			}
@@ -366,7 +366,7 @@ angular.module('ringnetworkApp.controllers').controller('airDrop', function ($sc
 					asset_outputs:self.candyOutputArr1
 				};
 				//self.sendtoaddress = opts.to_address;
-				//self.sendamount = opts.amount/1000000 + "MN";
+				//self.sendamount = opts.amount/1000000 + "RNG";
 
 				var eventListeners = eventBus.listenerCount('apiTowalletHome');
 
@@ -449,7 +449,7 @@ angular.module('ringnetworkApp.controllers').controller('airDrop', function ($sc
 						else if (err.match(/one of the cosigners refused to sign/))
 							err = gettextCatalog.getString('one of the cosigners refused to sign');
 						else if (err.match(/funds from/))
-							err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "MN";
+							err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "RNG";
 						else if (err == "close") {
 							err = "suspend transaction.";
 						}

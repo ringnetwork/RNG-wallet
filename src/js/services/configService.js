@@ -78,7 +78,7 @@ angular.module('ringnetworkApp.services').factory('configService', function (sto
             return isCordova ? cordova.plugins.deviceName.name : require('os').hostname();
         },
 
-        // 更改钱包默认单位为MN
+        // 更改钱包默认单位为RNG
         // 钱包默认设置 wallet default config
         wallet: {
             requiredCosigners: 2,
@@ -87,7 +87,7 @@ angular.module('ringnetworkApp.services').factory('configService', function (sto
             reconnectDelay: 5000,
             idleDurationMin: 4,
             settings: {
-                unitName: 'MN',
+                unitName: 'RNG',
                 unitValue: 1000000,
                 unitDecimals: 6,
                 unitCode: 'mega',

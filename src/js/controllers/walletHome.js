@@ -854,7 +854,7 @@ angular.module('ringnetworkApp.controllers').controller('walletHomeController', 
                 }
 
                 self.sendtoaddress = opts.to_address;
-                self.sendamount = opts.amount / 1000000 + "MN";
+                self.sendamount = opts.amount / 1000000 + "RNG";
 
                 var eventListeners = eventBus.listenerCount('apiTowalletHome');
 
@@ -935,7 +935,7 @@ angular.module('ringnetworkApp.controllers').controller('walletHomeController', 
                         else if (err.match(/one of the cosigners refused to sign/))
                             err = gettextCatalog.getString('one of the cosigners refused to sign');
                         else if (err.match(/funds from/))
-                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "MN";
+                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "RNG";
                         else if (err == "close") {
                             err = "suspend transaction.";
                         }

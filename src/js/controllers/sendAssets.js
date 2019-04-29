@@ -197,7 +197,7 @@ angular.module('ringnetworkApp.controllers').controller('sendAssets', function (
                     send_all: self.bSendAll,
                     arrSigningDeviceAddresses: arrSigningDeviceAddresses,
                     recipient_device_address: recipient_device_address,
-                    candyOutput: self.baseOutputs,   // MN 资产发送 (多笔转出)
+                    candyOutput: self.baseOutputs,   // RNG 资产发送 (多笔转出)
                     asset_outputs: self.thirdOutputs   // 第三方 资产发送 (多笔转出)
                 };
                 var eventListeners = eventBus.listenerCount('apiTowalletHome');
@@ -275,7 +275,7 @@ angular.module('ringnetworkApp.controllers').controller('sendAssets', function (
                         else if (err.match(/one of the cosigners refused to sign/))
                             err = gettextCatalog.getString('one of the cosigners refused to sign');
                         else if (err.match(/funds from/))
-                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "MN";
+                            err = err.substring(err.indexOf("from") + 4, err.indexOf("for")) + gettextCatalog.getString(err.substr(0, err.indexOf("from"))) + gettextCatalog.getString(". It needs atleast ") + parseInt(err.substring(err.indexOf("for") + 3, err.length)) / 1000000 + "RNG";
                         else if (err == "close") {
                             err = "suspend transaction.";
                         }

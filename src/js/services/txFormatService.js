@@ -15,11 +15,11 @@ angular.module('ringnetworkApp.services').factory('txFormatService', function (p
 		return profileService.formatAmount(amount, assetName) + ' ' + unitName;
 	};
 
-// 更改代码 交易小费单位是MN
+// 更改代码 交易小费单位是RNG
 
 	var formatFeeStr = function (fee) {
 		if (!fee) return;
-		return fee/1000000 + ' MN';
+		return fee/1000000 + ' RNG';
 	};
 
 
