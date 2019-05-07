@@ -58,9 +58,9 @@ angular.module('ringnetworkApp.services').factory('configService', function (sto
     };
 
     root.hub = [
-        '119.28.44.246:9193',
+        '119.28.128.192:9193',
     ]
-    root.stableHub = '119.28.44.246:9193';
+    root.stableHub = '119.28.128.192:9193';
     // 钱包默认配置
     var defaultConfig = {
         // wallet limits
