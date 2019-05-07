@@ -37,7 +37,7 @@ Github release:
 
 **方法一**
 
-- 用管理员权限打开PowerShell，执行 `npm install --global --production windows-build-tools`
+- 用管理员权限打开PowerShell，执行 `npm install --global --production windows-build-tools --vs2015`
 - 配置环境变量 `GYP_MSVS_VERSION = 2015`
 - 配置环境变量 在 `PATH` 添加Python安装目录
 - `npm config set msvs_version 2015`
