@@ -123,9 +123,9 @@ npm run start
 
 RingNetwork使用过程中，会在用户目录生成缓存文件，用来保存账本数据和个人设置，并且在卸载软件后不会主动删除这些缓存文件，防止错误卸载软件而丢失个人数字资产，重新安装软件就可恢复数据。若用户已确定要删除这些废弃的数据，可按照下面的操作系统位置去操作。
 
-* macOS: `~/Library/Application Support/RNG`
-* Linux: `~/.config/RNG`
-* Windows: `%LOCALAPPDATA%\RNG`
+* macOS: `~/Library/Application Support/rng-wallet`
+* Linux: `~/.config/rng-wallet`
+* Windows: `%LOCALAPPDATA%\rng-wallet`
 
 
 ## 问题反馈
