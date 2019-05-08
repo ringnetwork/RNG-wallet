@@ -37,7 +37,7 @@ We provide executable programs for multiple platforms. You can either start usin
 
 **Option 1:**
 
-- Open PowerShell by using administrator privileges, run `npm install --global --production windows-build-tools`
+- Open PowerShell by using administrator privileges, run `npm install --global --production windows-build-tools --vs2015`
 - Set environment variable `GYP_MSVS_VERSION = 2015`
 - Set environment variable, add the Python install directory to `PATH`.
 - `npm config set msvs_version 2015`
