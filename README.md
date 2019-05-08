@@ -123,9 +123,9 @@ The release package will be generated under ../ringnetworkbuilds
 
 Once the user starts to use RingNetwork Wallet, cache files will be generated in the user directory to store data and user profiles, and to prevent personal data loss due to incorrect uninstallation, these caches files won’t be deleted after installation, all data will be recovered after reinstalling the software. If the user decides to delete these data, please follow the instructions below:
 
-* macOS: `~/Library/Application Support/RNG`
-* Linux: `~/.config/RNG`
-* Windows: `%LOCALAPPDATA%\RNG`
+* macOS: `~/Library/Application Support/rng-wallet`
+* Linux: `~/.config/rng-wallet`
+* Windows: `%LOCALAPPDATA%\rng-wallet`
 
 
 ## Issues and Questions
