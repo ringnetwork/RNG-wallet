@@ -1322,7 +1322,7 @@ angular.module('ringnetworkApp.controllers').controller('walletHomeController', 
 			$scope.openInExplorer = function () {
 				var testnet = home.isTestnet ? 'testnet' : '';
                 // var url = 'https://' + testnet + 'explorer.ringnetwork.org/#' + btx.unit;
-                var url = 'http://' + testnet + 'explorer2-alpha.ringnetwork.org:8000/detail#' + btx.unit;
+                var url = 'http://' + testnet + 'explorer-beta2.ringnetwork.org:8000/detail#' + btx.unit;
 				if (typeof nw !== 'undefined')
 					nw.Shell.openExternal(url);
 				else if (isCordova)
