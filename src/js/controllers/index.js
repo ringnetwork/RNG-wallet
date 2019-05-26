@@ -311,7 +311,7 @@ angular.module('ringnetworkApp.controllers').controller('indexController', funct
                 myWitnesses.readMyWitnesses(function (arrWitnesses) {
                     network.requestFromLightVendor('light/get_history', {
                         addresses: arrTmpAddresses,
-                        witnesses: arrWitnesses
+                        // witnesses: arrWitnesses
                     }, function (ws, request, response) {
                         if (response && response.error) {
                             var breadcrumbs = require('rng-core/base/breadcrumbs.js');
