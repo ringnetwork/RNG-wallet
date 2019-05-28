@@ -95,7 +95,7 @@ The release package will be generated under ../ringnetworkbuilds
 
 ##### Android
 
-- Install Android SDK （refer to https://developer.android.google.cn/studio/）
+- Install Android SDK （refer to https://developer.android.google.cn/studio/ ）
 - Run `npm run android`
 
 ##### iOS
