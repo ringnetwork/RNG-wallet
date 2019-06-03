@@ -19,8 +19,8 @@ msgid "-- Select co-signer --"
 msgstr "Yedek-kullanıcıyı seçin"
 
 #: public/views/preferencesGlobal.html:135
-msgid "About Trustnote"
-msgstr "Trustnote Hakkında"
+msgid "About RingNetwork"
+msgstr "RingNetwork Hakkında"
 
 #: src/js/controllers/copayers.js:8
 #: src/js/controllers/preferencesDelete.js:9
@@ -90,8 +90,8 @@ msgid "All Wallet Addresses"
 msgstr "Tüm Cüzdan Adresleri"
 
 #: public/views/translators.html:52
-msgid "All contributions to Trustnote's translation are welcome. Sign up at crowdin.com and join the Trustnote project at"
-msgstr "Trustnote tüm çeviri katkılarına açıktır.  Crowdin.com adresinden kaydolun ve Trustnote projesine katılın.""
+msgid "All contributions to RingNetwork's translation are welcome. Sign up at crowdin.com and join the RingNetwork project at"
+msgstr "RingNetwork tüm çeviri katkılarına açıktır.  Crowdin.com adresinden kaydolun ve RingNetwork projesine katılın.""
 
 #: public/views/modals/multi-payment.html:65
 msgid "Already Paid"
@@ -216,8 +216,8 @@ msgid "Browser unsupported"
 msgstr "Tarayıcı desteklenmiyor"
 
 #: public/views/modals/destination-address.html:119
-msgid "Trustnote address"
-msgstr "Trustnote adresi"
+msgid "RingNetwork address"
+msgstr "RingNetwork adresi"
 
 #: public/views/includes/password.html:24
 msgid "CANCEL"
@@ -369,8 +369,8 @@ msgid "Could not import. Check input file and password"
 msgstr "Girdi sağlanamadı. Giriş dosyasını ve anahtarı kontrol ediniz."
 
 #: src/js/controllers/walletHome.js:49
-msgid "Could not recognize a valid Trustnote QR Code"
-msgstr "Geçerli bir Trustnote barkodu tanımlanamadı"
+msgid "Could not recognize a valid RingNetwork QR Code"
+msgstr "Geçerli bir RingNetwork barkodu tanımlanamadı"
 
 #: src/js/controllers/walletHome.js:598
 msgid "Could not send payment"
@@ -490,8 +490,8 @@ msgid "Download CSV file"
 msgstr "CSV dosyasını indir"
 
 #: public/views/splash.html:26
-msgid "Download the entire Trustnote database"
-msgstr "Bütün Trustnote veritabanını indir"
+msgid "Download the entire RingNetwork database"
+msgstr "Bütün RingNetwork veritabanını indir"
 
 #: public/views/correspondentDevice.html:26
 #: public/views/modals/destination-address.html:38
@@ -758,8 +758,8 @@ msgid "Multidevice Wallet"
 msgstr "Çoklu Cihaz Cüzdanı"
 
 #: public/views/walletHome.html:218
-msgid "My Trustnote address"
-msgstr "Benim Trustnote adresim"
+msgid "My RingNetwork address"
+msgstr "Benim RingNetwork adresim"
 
 #: public/views/correspondentDevice.html:297
 msgid "My recording preference"
@@ -1399,8 +1399,8 @@ msgid "WARNINGS:"
 msgstr "UYARILAR:"
 
 #: public/views/splash.html:53
-msgid "WELCOME TO TRUSTNOTE"
-msgstr "TRUSTNOTE'A HOŞGELDİNİZ"
+msgid "WELCOME TO RingNetwork"
+msgstr "RingNetwork'A HOŞGELDİNİZ"
 
 #: public/views/copayers.html:24
 msgid "Waiting for co-signers"
@@ -1436,8 +1436,8 @@ msgid "Wallet Name (at creation)"
 msgstr "Cüzdan Adı (kurulum anındaki)"
 
 #: src/js/services/profileService.js:392
-msgid "Wallet already in Trustnote:"
-msgstr "Cüzdan zaten Trustnote'da."
+msgid "Wallet already in RingNetwork:"
+msgstr "Cüzdan zaten RingNetwork'da."
 
 #: public/views/create.html:48
 msgid "Wallet name"
@@ -1603,8 +1603,8 @@ msgid "or"
 msgstr "ya da"
 
 #: public/views/backup.html:24
-msgid "or backup all Trustnote data at"
-msgstr "veya tüm Trustnote verilerini şurada yedekle"
+msgid "or backup all RingNetwork data at"
+msgstr "veya tüm RingNetwork verilerini şurada yedekle"
 
 #: public/views/modals/offer-contract.html:43
 msgid "peer pays"

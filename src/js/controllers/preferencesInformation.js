@@ -102,7 +102,7 @@ angular.module('ringnetworkApp.controllers').controller('preferencesInformation'
             return;
           };
 
-          var body = 'Trustnote Wallet "' + $scope.walletName + '" Addresses.\n\n';
+          var body = 'RingNetwork Wallet "' + $scope.walletName + '" Addresses.\n\n';
           body += "\n";
           body += addrs.map(function(v) {
             return ('* ' + v.address + ' ' + v.path + ' ' + formatDate(v.createdOn));
@@ -110,7 +110,7 @@ angular.module('ringnetworkApp.controllers').controller('preferencesInformation'
 
           window.plugins.socialsharing.shareViaEmail(
             body,
-            'Trustnote Addresses',
+            'RingNetwork Addresses',
             null, // TO: must be null or an array
             null, // CC: must be null or an array
             null, // BCC: must be null or an array

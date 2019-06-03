@@ -24,7 +24,7 @@ msgid ". It needs atleast"
 msgstr ""
 
 #: disclaimer.html:62
-msgid "<b>IF YOU LOSE ACCESS TO YOUR TRUSTNOTE WALLET, YOU ACKNOWLEDGE AND AGREE THAT ANY NOTES OR OTHER VALUABLES YOU HAVE ASSOCIATED WITH THAT TRUSTNOTE WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR RingNetwork WALLET, YOU ACKNOWLEDGE AND AGREE THAT ANY NOTES OR OTHER VALUABLES YOU HAVE ASSOCIATED WITH THAT RingNetwork WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr ""
 
 #: preferencesGlobal.html:96
@@ -400,7 +400,7 @@ msgid "Could not import. Check input file and password"
 msgstr ""
 
 #: walletHome.js:71
-msgid "Could not recognize a valid Trustnote QR Code"
+msgid "Could not recognize a valid RingNetwork QR Code"
 msgstr ""
 
 #: airDrop.js:542
@@ -654,7 +654,7 @@ msgid "If the peer doesn't pay, I can take my money back after"
 msgstr ""
 
 #: modals\howToSign.html:151
-msgid "If you want to use cold wallet in Trustnote version 1.1.5,you should watch the wallet at first."
+msgid "If you want to use cold wallet in RingNetwork version 1.1.5,you should watch the wallet at first."
 msgstr ""
 
 #: includes\askColdwalletQrcode.html:74

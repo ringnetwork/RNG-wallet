@@ -68,7 +68,7 @@ angular.module('ringnetworkApp.controllers').controller('walletHomeController', 
 		if (form.address.$invalid && !self.blockUx) {
 			console.log("invalid address, resetting form");
 			self.resetForm();
-			self.error = gettext('Could not recognize a valid Trustnote QR Code');
+			self.error = gettext('Could not recognize a valid RingNetwork QR Code');
 		}
 	});
 

@@ -1690,7 +1690,7 @@ msgstr "请您确定使用本软件是您自己的决定并遵守所有适用的
 msgid "You are responsible for safekeeping your passwords, private key pairs, PINs and any other codes you use to access the software."
 msgstr "您有责任妥善保管您的登录助记词、私钥、交易密码和您用以访问本软件的其它代码。"
 
-msgid "<b>IF YOU LOSE ACCESS TO YOUR TRUSTNOTE WALLET, YOU ACKNOWLEDGE AND AGREE THAT ANY NOTES OR OTHER VALUABLES YOU HAVE ASSOCIATED WITH THAT TRUSTNOTE WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR RingNetwork WALLET, YOU ACKNOWLEDGE AND AGREE THAT ANY NOTES OR OTHER VALUABLES YOU HAVE ASSOCIATED WITH THAT RingNetwork WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>若您失去对本钱包的控制权，您知悉并接受任何与本钱包关联的RNG和其它有价资产将无法找回。</b>"
 
 msgid "All transaction requests are irreversible."
@@ -2188,7 +2188,7 @@ msgstr "将其中一部手机关闭 Wifi并开启飞行模式, 作为冷钱包�
 msgid "Watch wallet"
 msgstr "观察钱包"
 
-msgid "If you want to use cold wallet in Trustnote version 1.1.5,you should watch the wallet at first."
+msgid "If you want to use cold wallet in RingNetwork version 1.1.5,you should watch the wallet at first."
 msgstr "如果你想使用RingNetwork1.1.5的冷钱包功能, 首先要观察该钱包。"
 
 msgid "note:one of phone connected network as <b>hot wallet</b> to watch <b>cold wallet</b>,the other one keep offline for Authorized signature."

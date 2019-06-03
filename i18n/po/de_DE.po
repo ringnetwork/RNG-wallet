@@ -18,7 +18,7 @@ msgid "-- Select co-signer --"
 msgstr "-- Wählen Sie einen Mitunterzeichner --"
 
 #: public/views/preferencesGlobal.html:135
-msgid "About Trustnote"
+msgid "About RingNetwork"
 msgstr "Über RingNetwork"
 
 #: src/js/controllers/copayers.js:8
@@ -89,7 +89,7 @@ msgid "All Wallet Addresses"
 msgstr "Alle Wallet-Adressen"
 
 #: public/views/translators.html:52
-msgid "All contributions to Trustnote's translation are welcome. Sign up at crowdin.com and join the Trustnote project at"
+msgid "All contributions to RingNetwork's translation are welcome. Sign up at crowdin.com and join the RingNetwork project at"
 msgstr "Alle Beiträge zur RingNetwork-Übersetzung sind willkommen. Melde dich bei crowdin.com an und tritt dem RingNetwork-Projekt bei"
 
 #: public/views/modals/multi-payment.html:65
@@ -215,7 +215,7 @@ msgid "Browser unsupported"
 msgstr "Browser nicht unterstützt"
 
 #: public/views/modals/destination-address.html:119
-msgid "Trustnote address"
+msgid "RingNetwork address"
 msgstr "RingNetwork-Adresse"
 
 #: public/views/includes/password.html:24
@@ -368,7 +368,7 @@ msgid "Could not import. Check input file and password"
 msgstr "Konnte nicht importiert werden. Überprüfen Sie die Eingabedatei und das Passwort"
 
 #: src/js/controllers/walletHome.js:49
-msgid "Could not recognize a valid Trustnote QR Code"
+msgid "Could not recognize a valid RingNetwork QR Code"
 msgstr "Es konnte kein gültiger RingNetwork-QR-Code erkannt werden"
 
 #: src/js/controllers/walletHome.js:598
@@ -489,7 +489,7 @@ msgid "Download CSV file"
 msgstr "CSV-Datei herunterladen"
 
 #: public/views/splash.html:26
-msgid "Download the entire Trustnote database"
+msgid "Download the entire RingNetwork database"
 msgstr "Laden Sie die gesamte RingNetwork-Datenbank herunter"
 
 #: public/views/correspondentDevice.html:26
@@ -757,7 +757,7 @@ msgid "Multidevice Wallet"
 msgstr "Multi-Wallet"
 
 #: public/views/walletHome.html:218
-msgid "My Trustnote address"
+msgid "My RingNetwork address"
 msgstr "Meine RingNetwork-Adresse"
 
 #: public/views/correspondentDevice.html:297
@@ -1399,8 +1399,8 @@ msgid "WARNINGS:"
 msgstr "WARNUNGEN:"
 
 #: public/views/splash.html:53
-msgid "WELCOME TO TRUSTNOTE"
-msgstr "WILLKOMMEN ZU TRUSTNOTE"
+msgid "WELCOME TO RingNetwork"
+msgstr "WILLKOMMEN ZU RingNetwork"
 
 #: public/views/copayers.html:24
 msgid "Verschlüsselungskennwort"
@@ -1436,7 +1436,7 @@ msgid "Wallet Name (at creation)"
 msgstr "Wallet-Name (bei der Erstellung)"
 
 #: src/js/services/profileService.js:392
-msgid "Wallet already in Trustnote:"
+msgid "Wallet already in RingNetwork:"
 msgstr "Wallet bereits in RingNetwork:"
 
 #: public/views/create.html:48
@@ -1604,7 +1604,7 @@ msgid "or"
 msgstr "oder"
 
 #: public/views/backup.html:24
-msgid "or backup all Trustnote data at"
+msgid "or backup all RingNetwork data at"
 msgstr "oder sichern Sie alle RingNetwork-Daten bei"
 
 #: public/views/modals/offer-contract.html:43

@@ -173,7 +173,7 @@ angular.module('ringnetworkApp.services').factory('go', function ($rootScope, $s
         });
     }
 
-    function extractTrustnoteArgFromCommandLine(commandLine) {
+    function extractRingNetworkArgFromCommandLine(commandLine) {
         var conf = require('rng-core/config/conf.js');
         var re = new RegExp('^' + conf.program + ':', 'i');
         var arrParts = commandLine.split(' '); // on windows includes exe and all args, on mac just our arg
@@ -234,7 +234,7 @@ X-Ubuntu-StageHint=SideStage\n", { mode: 0755 }, function (err) {
             gui.App.on('open', function (commandLine) {
                 console.log("Open url: " + commandLine);
                 if (commandLine) {
-                    var file = extractTrustnoteArgFromCommandLine(commandLine);
+                    var file = extractRingNetworkArgFromCommandLine(commandLine);
                     if (!file)
                         return console.log("no RNG: arg found");
                     handleUri(file);

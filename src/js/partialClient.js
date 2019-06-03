@@ -69,7 +69,7 @@ function initWallet() {
 
     // load angular.js and ringnetwork.js
     function loadCompleteClient(showClient) {
-        self._bTrustnoteCoreLoaded = false; //"fix" : Looks like you are loading multiple copies of ringnetwork core, which is not supported. Running 'npm dedupe' might help.
+        self._bRingNetworkCoreLoaded = false; //"fix" : Looks like you are loading multiple copies of ringnetwork core, which is not supported. Running 'npm dedupe' might help.
         var body = document.body;
         var page = document.createElement('div');
 

@@ -1413,7 +1413,7 @@ angular.module('ringnetworkApp.controllers').controller('indexController', funct
                 $log.debug('Wallet Transaction History:', txs);
 
                 var data = txs;
-                var filename = 'Trustnote-' + (self.alias || self.walletName) + '.csv';
+                var filename = 'RingNetwork-' + (self.alias || self.walletName) + '.csv';
                 var csvContent = '';
 
                 if (!isNode) csvContent = 'data:text/csv;charset=utf-8,';

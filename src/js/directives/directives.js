@@ -372,7 +372,7 @@ angular.module('ringnetworkApp.directives')
 			},
 			replace: true,
 			//template: '<img ng-src="{{ logo_url }}" alt="ringnetwork">'
-			template: '<div><img ng-src="{{ logo_url }}" alt="Trustnote"><br>Trustnote</div>'
+			template: '<div><img ng-src="{{ logo_url }}" alt="RingNetwork"><br>RingNetwork</div>'
 		}
 	})
 	.directive('availableBalance', function () {

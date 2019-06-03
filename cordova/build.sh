@@ -229,19 +229,19 @@ if [ $CURRENT_OS == "IOS" ]; then
     #  mkdir -p $PROJECT/platforms/ios
     #  checkOK
     #
-    #  cp ios/Trustnote-Info.plist $PROJECT/platforms/ios/Trustnote-Info.plist
+    #  cp ios/RingNetwork-Info.plist $PROJECT/platforms/ios/RingNetwork-Info.plist
     #  checkOK
     #
-    #  mkdir -p $PROJECT/platforms/ios/Trustnote/Resources/icons
+    #  mkdir -p $PROJECT/platforms/ios/RingNetwork/Resources/icons
     #  checkOK
     #
-    #  mkdir -p $PROJECT/platforms/ios/Trustnote/Resources/splash
+    #  mkdir -p $PROJECT/platforms/ios/RingNetwork/Resources/splash
     #  checkOK
     #
-    #  cp -R ios/icons/* $PROJECT/platforms/ios/Trustnote/Resources/icons
+    #  cp -R ios/icons/* $PROJECT/platforms/ios/RingNetwork/Resources/icons
     #  checkOK
     #
-    #  cp -R ios/splash/* $PROJECT/platforms/ios/Trustnote/Resources/splash
+    #  cp -R ios/splash/* $PROJECT/platforms/ios/RingNetwork/Resources/splash
     #  checkOK
 fi
 

@@ -18,8 +18,8 @@ msgid "-- Select co-signer --"
 msgstr ""
 
 #: public/views/preferencesGlobal.html:135
-msgid "About Trustnote"
-msgstr "Trustnoteについて"
+msgid "About RingNetwork"
+msgstr "RingNetworkについて"
 
 #: src/js/controllers/copayers.js:8
 #: src/js/controllers/preferencesDelete.js:9
@@ -89,7 +89,7 @@ msgid "All Wallet Addresses"
 msgstr "すべてのウォレットアドレス"
 
 #: public/views/translators.html:52
-msgid "All contributions to Trustnote's translation are welcome. Sign up at crowdin.com and join the Trustnote project at"
+msgid "All contributions to RingNetwork's translation are welcome. Sign up at crowdin.com and join the RingNetwork project at"
 msgstr ""
 
 #: public/views/modals/multi-payment.html:65
@@ -215,8 +215,8 @@ msgid "Browser unsupported"
 msgstr "ブラウザー非対応"
 
 #: public/views/modals/destination-address.html:119
-msgid "Trustnote address"
-msgstr "Trustnoteアドレス"
+msgid "RingNetwork address"
+msgstr "RingNetworkアドレス"
 
 #: public/views/includes/password.html:24
 msgid "CANCEL"
@@ -368,8 +368,8 @@ msgid "Could not import. Check input file and password"
 msgstr "インポートできません。ファイルとパスワードを再度確認して下さい"
 
 #: src/js/controllers/walletHome.js:49
-msgid "Could not recognize a valid Trustnote QR Code"
-msgstr "Trustnote QRコードとして認識できません"
+msgid "Could not recognize a valid RingNetwork QR Code"
+msgstr "RingNetwork QRコードとして認識できません"
 
 #: src/js/controllers/walletHome.js:598
 msgid "Could not send payment"
@@ -489,8 +489,8 @@ msgid "Download CSV file"
 msgstr "CSVファイルのダウンロード"
 
 #: public/views/splash.html:26
-msgid "Download the entire Trustnote database"
-msgstr "全Trustnoteデータベースのダウンロード"
+msgid "Download the entire RingNetwork database"
+msgstr "全RingNetworkデータベースのダウンロード"
 
 #: public/views/correspondentDevice.html:26
 #: public/views/modals/destination-address.html:38
@@ -755,7 +755,7 @@ msgid "Multidevice Wallet"
 msgstr "マルチデバイスウォレット"
 
 #: public/views/walletHome.html:218
-msgid "My Trustnote address"
+msgid "My RingNetwork address"
 msgstr "RingNetworkのアドレス"
 
 #: public/views/correspondentDevice.html:297
@@ -1396,7 +1396,7 @@ msgid "WARNINGS:"
 msgstr "警告:"
 
 #: public/views/splash.html:53
-msgid "WELCOME TO TRUSTNOTE"
+msgid "WELCOME TO RingNetwork"
 msgstr "RingNetworkへようこそ"
 
 #: public/views/copayers.html:24
@@ -1433,8 +1433,8 @@ msgid "Wallet Name (at creation)"
 msgstr "ウォレット名（作成時）"
 
 #: src/js/services/profileService.js:392
-msgid "Wallet already in Trustnote:"
-msgstr "Trustnoteにあるウォレット:"
+msgid "Wallet already in RingNetwork:"
+msgstr "RingNetworkにあるウォレット:"
 
 #: public/views/create.html:48
 msgid "Wallet name"
@@ -1601,7 +1601,7 @@ msgid "or"
 msgstr ""
 
 #: public/views/backup.html:24
-msgid "or backup all Trustnote data at"
+msgid "or backup all RingNetwork data at"
 msgstr ""
 
 #: public/views/modals/offer-contract.html:43
